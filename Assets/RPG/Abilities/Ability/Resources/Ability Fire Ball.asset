@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Ability Fire Ball
+  m_EditorClassIdentifier: 
+  itemID: 2fe396fb-12e7-4cdd-9113-87e6327bf3de
+  displayName: Fireball
+  description: 'Ability
+
+    30 yd range
+
+    2.4 second cast time. Costs 25 mana.
+
+    Conjures
+    a ball of fire magic dealing 10 damage.
+
+    8 second cooldown time.
+
+    Requires
+    Level 1
+
+    Requires 2 Intelligence'
+  icon: {fileID: 21300000, guid: c2541016858bb6f429ef6083f5f95395, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 80
+  category: 4
+  consumable: 0
+  usageCondition:
+    and:
+    - or:
+      - predicate: 5
+        parameters:
+        - Intelligence
+        - 2
+        negate: 0
+  targetingStrategy: {fileID: 11400000, guid: 5f2dea5a0e6889f4eab8f6da48c8cfe3, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 2af0d203a45e62d4ebeeb376b44e7eea, type: 2}
+  - {fileID: 11400000, guid: 323efca91237eac42bf2640e44e077ed, type: 2}
+  cooldownTime: 8
+  manaCost: 25
+  hasCastTime: 1
+  castTime: 2.4
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 4581333532627374, guid: fd6a4cda0f558e14f8009eac4c0c23b5, type: 3}
+  abilityRange: 30
+  summonCircleDestroyDelay: 0.5

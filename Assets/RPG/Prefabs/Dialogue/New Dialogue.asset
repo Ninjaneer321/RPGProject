@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9082582261518722367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 1307ffb3-f50e-4c79-a916-c3baa56894f5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Pretend this Pmod is now Durial321) THX FOR THE PHAT
+  children:
+  - f173f01f-5640-4b79-ab85-6a36471ee429
+  rect:
+    serializedVersion: 2
+    x: 1284
+    y: 525.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-8800661470234120383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: f173f01f-5640-4b79-ab85-6a36471ee429
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1534
+    y: 525.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6758378232319078592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: bc75efc6-cf6e-4b17-8e12-1ef2b2a43255
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Click me to finish the quest!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1306
+    y: 348.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5870767591246525384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 7b9273cf-02ac-475d-a99e-e1a6550f54ee
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Bank your items!!! Bank your items!! -pmod
+  children:
+  - 9bd2ab70-b791-4383-8b86-397a7627cd88
+  rect:
+    serializedVersion: 2
+    x: 98
+    y: 162.99998
+    width: 200
+    height: 100
+  onEnterAction: TestRootEntry
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772078df8e726fa4487ba6ab0cee5c02, type: 3}
+  m_Name: New Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5870767591246525384}
+  - {fileID: 8686496231937731907}
+  - {fileID: 3387898097254424492}
+  - {fileID: 1512852247185028764}
+  - {fileID: -9082582261518722367}
+  - {fileID: 7895164458469044363}
+  - {fileID: -6758378232319078592}
+  - {fileID: -8800661470234120383}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1512852247185028764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 30d12b63-60d2-4ff0-a53e-d05244ac5170
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: '*you scurry to the bank hoping to get your items secure in time. You hear
+    the sound of an Ice Barrage*'
+  children:
+  - 1307ffb3-f50e-4c79-a916-c3baa56894f5
+  rect:
+    serializedVersion: 2
+    x: 983
+    y: 489.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3387898097254424492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 72d10a5a-6596-4150-934a-c60dd0eebc6b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: A player can attack you outside of the wilderness! Please bank your items!
+  children:
+  - 30d12b63-60d2-4ff0-a53e-d05244ac5170
+  - ef05b08b-5311-4a6b-b7aa-6ba5e9299b7f
+  rect:
+    serializedVersion: 2
+    x: 670
+    y: 301.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7895164458469044363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: ef05b08b-5311-4a6b-b7aa-6ba5e9299b7f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: You already told me this
+  children:
+  - bc75efc6-cf6e-4b17-8e12-1ef2b2a43255
+  rect:
+    serializedVersion: 2
+    x: 996
+    y: 234.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 0
+        parameters:
+        - Slay 10 boars!
+        negate: 0
+--- !u!114 &8686496231937731907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 9bd2ab70-b791-4383-8b86-397a7627cd88
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What's going on??
+  children:
+  - 72d10a5a-6596-4150-934a-c60dd0eebc6b
+  rect:
+    serializedVersion: 2
+    x: 361
+    y: 250.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

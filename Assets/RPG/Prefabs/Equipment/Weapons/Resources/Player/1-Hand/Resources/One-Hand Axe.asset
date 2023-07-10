@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: One-Hand Axe
+  m_EditorClassIdentifier: 
+  itemID: 0480c19d-2d98-45b2-99f4-23d78d1cf946
+  displayName: Axe
+  description: "One-Hand Axe            \n7-11 Damage / Speed 2.50\n(3.60 damage
+    per second)\nRequires Level 2"
+  icon: {fileID: 21300000, guid: 43f79c86c1dc2994abac4e3d886669d0, type: 3}
+  pickup: {fileID: 160915439029886631, guid: e818fc9d1eed47f448f1bd7be17a1694, type: 3}
+  stackable: 0
+  price: 130
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: 0b64042ace9309841b3a7422acd66127, type: 2}
+  weaponPrefab: {fileID: 6290066852969694541, guid: d65b5bcc23367054e9b8f70b43eda252, type: 3}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 11
+  weaponDamageBottomEnd: 7
+  percentageBonus: 0
+  weaponRange: 2
+  weaponSpeed: 2.5
+  projectile: {fileID: 0}
+  isTwoHanded: 0
+  mainHand: 0

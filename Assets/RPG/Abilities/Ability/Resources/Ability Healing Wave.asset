@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Ability Healing Wave
+  m_EditorClassIdentifier: 
+  itemID: b79d2b32-4ba0-4adc-97c0-ccd5bb555274
+  displayName: Healing Wave
+  description: 'Ability
+
+    Self-Cast
+
+    2.4 second cast time. Costs 15 mana.
+
+    Conjures
+    healing magic around the user returning 25 health.
+
+    10 second cooldown time.
+
+    Requires
+    Level 1'
+  icon: {fileID: 21300000, guid: 6c4e7d121e1f6db499b3e3faf155515d, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 50
+  category: 4
+  consumable: 0
+  usageCondition:
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 1
+        - 1
+        negate: 0
+  targetingStrategy: {fileID: 11400000, guid: d681bfc79af255940abab3188bca7eaf, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 222d3688ebdbbf543a00e05fc2e648dd, type: 2}
+  - {fileID: 11400000, guid: e74269366e377664eacf467f50a510e1, type: 2}
+  cooldownTime: 10
+  manaCost: 15
+  hasCastTime: 1
+  castTime: 3.2
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 4017616789432200, guid: 2bb872316813d8e4e80b3aced9070178, type: 3}
+  abilityRange: 0
+  summonCircleDestroyDelay: 0

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Mushroom Item
+  m_EditorClassIdentifier: 
+  itemID: cbd2543c-09fc-4828-8fe9-14af54be95f7
+  displayName: Mushroom
+  description: A common edible mushroom.
+  icon: {fileID: 21300000, guid: af82f5bee9c4bbd499d99944826bd315, type: 3}
+  pickup: {fileID: 7713499841277030246, guid: 733cc0e34b7cc734e8c44e51a7527ee1, type: 3}
+  stackable: 1
+  price: 10
+  category: 3
+  consumable: 1
+  usageCondition:
+    and: []
+  targetingStrategy: {fileID: 11400000, guid: d681bfc79af255940abab3188bca7eaf, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: e74269366e377664eacf467f50a510e1, type: 2}
+  cooldownTime: 0
+  manaCost: 0
+  hasCastTime: 0
+  castTime: 1
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 0}
+  abilityRange: 0
+  summonCircleDestroyDelay: 0

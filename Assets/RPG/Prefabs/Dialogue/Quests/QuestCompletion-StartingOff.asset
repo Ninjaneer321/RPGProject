@@ -1,0 +1,985 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8324964154609682623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: b500bf21-1368-491c-b3c7-ec4c5196cc64
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1234
+    y: 819
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7568066084776182007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 531442d7-7172-4064-9a91-7fb1d3f56358
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: About "Check the Cave".
+  children:
+  - 85a2c110-11b3-4cb0-91ae-ea7b26260a80
+  rect:
+    serializedVersion: 2
+    x: 655
+    y: 722
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Quest - Check the Cave
+        - 
+        negate: 0
+--- !u!114 &-6973749608001620499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 65660d03-5da7-471c-97fc-54ae3ea90110
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'No thanks. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 123.999985
+    y: 1546
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6740800233642485530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 640c6456-91ff-434c-86e5-cdda64e5b5c6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Where are the wolves?
+  children:
+  - 226c912b-f027-46fb-b0a4-d1aa03fd7bf5
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 1330
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6218953532720390151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 6b6f5210-fe37-45ea-9fbe-15a8c34663fc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That is awful. Have there been any attacks on locals?
+  children:
+  - 7f5015f1-a705-44b7-aaa7-61b13f8c759c
+  rect:
+    serializedVersion: 2
+    x: 440
+    y: 1112
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5234429862798244828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 8da80453-956e-4d28-bb96-cc8f1ca93d24
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Not entirely. The story has many deviations depending on who you ask, and
+    you don''t seem like the "main character" type. '
+  children:
+  - 2c2e288a-6ee6-467c-83e3-c646ef47d472
+  rect:
+    serializedVersion: 2
+    x: 46.999985
+    y: 908.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5172853217854158440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 58cdc965-838c-4606-af4b-3e7d2c9c9656
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Wonderful!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1540
+    y: 710
+    width: 200
+    height: 100
+  onEnterAction: CompleteQuest2
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4565811738921456770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 50e08090-05a9-48b5-ac1d-5986a9d7e2fc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: About "Loot Wolf Blood Samples"
+  children:
+  - b4afdbdb-64eb-4657-8f6d-093460e9dcd5
+  rect:
+    serializedVersion: 2
+    x: 407
+    y: 149
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Quest - Gather Wolf Blood Sample
+        - 
+        negate: 0
+    - or:
+      - predicate: 4
+        parameters:
+        - Quest - Gather Wolf Blood Sample
+        - 
+        negate: 0
+--- !u!114 &-4318433236481439228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 9f9b08f0-4fd2-4483-afdf-349ee7993a94
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What do you mean?
+  children:
+  - 6296f5b8-085b-44d2-8d9d-908e11a52e4d
+  rect:
+    serializedVersion: 2
+    x: 355
+    y: 636.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4253827167843756804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 8c3405ba-b8aa-40c7-8c21-007188a61e09
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: About "Starting Off".
+  children:
+  - bfe9d02a-0069-4d95-bb09-853fb6b1c2c9
+  rect:
+    serializedVersion: 2
+    x: 125
+    y: 300
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 4
+        parameters:
+        - Quest - Starting Off
+        - 
+        negate: 0
+--- !u!114 &-3691056275740355823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 4799366f-0e6f-4f9f-b6bb-89e77d6b70eb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: About the Adventurer's Guild.
+  children:
+  - 8436c50e-9bf7-4673-b0f3-f72222f5194f
+  rect:
+    serializedVersion: 2
+    x: 217
+    y: 23
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3509783690525036145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 2e550521-3ba9-415b-870a-cb0e3c41b101
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Fantastic! Now I need you to check out the cave for me.
+  children:
+  - e611dd03-7099-422b-a8f7-cd89c0c5e2fe
+  rect:
+    serializedVersion: 2
+    x: 1259
+    y: 261
+    width: 200
+    height: 100
+  onEnterAction: CompleteObjective2
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3135421826198299512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 05878ebb-1877-41c0-bb06-9ef495c398b3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: You don't think I could be this foreigner, do you?
+  children:
+  - 8da80453-956e-4d28-bb96-cc8f1ca93d24
+  rect:
+    serializedVersion: 2
+    x: 382
+    y: 789.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2210864341414878600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: a7cd0141-b613-45e3-8736-85957eeec18d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, thank you for bringing me those. Now I need you to check out the nearby
+    cave.
+  children:
+  - e611dd03-7099-422b-a8f7-cd89c0c5e2fe
+  rect:
+    serializedVersion: 2
+    x: 1100
+    y: 413
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2051486566987574546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 8937343e-7a67-472c-974e-5b5daaac5a67
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'The man who I woke up next to told me to come here and that you wanted to
+    speak to me. '
+  children:
+  - fcdad959-6e3e-45f0-976c-1d693f9b7426
+  rect:
+    serializedVersion: 2
+    x: 488
+    y: 319
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 3
+        parameters:
+        - Quest - Starting Off
+        - 
+        negate: 0
+--- !u!114 &-1975995288627455947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 0d73d032-b784-4ed6-94b6-6a94ccc51f37
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: About those samples...
+  children:
+  - a7cd0141-b613-45e3-8736-85957eeec18d
+  rect:
+    serializedVersion: 2
+    x: 829
+    y: 321
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 3
+        parameters:
+        - Quest - Gather Wolf Blood Sample
+        - 
+        negate: 0
+--- !u!114 &-1424429242588134129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 6909a0e7-bcb2-4645-93f9-8ec0f361185e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1530
+    y: 476
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest2
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1384866379506939878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 460be74c-0daf-4c5f-8095-3dccafff227c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'The man who I woke up next to told me to come here and that you wanted to
+    speak to me. '
+  children:
+  - 574c41c3-1758-489e-9b70-5fb4c1cafac9
+  rect:
+    serializedVersion: 2
+    x: 84
+    y: 441.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-664638982507805637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: b4afdbdb-64eb-4657-8f6d-093460e9dcd5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Did you bring the samples I asked for?
+  children:
+  - 6234c0f3-57c9-4bbe-aa30-85bb82310d7d
+  rect:
+    serializedVersion: 2
+    x: 679
+    y: 149
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-611305344326233753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: bfe9d02a-0069-4d95-bb09-853fb6b1c2c9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'It''s a miracle to see you moving. My expedition found you mortally wounded
+    and did everything we could to increase your survival chance. I''m pleased to
+    see our efforts paid off. '
+  children:
+  - 460be74c-0daf-4c5f-8095-3dccafff227c
+  rect:
+    serializedVersion: 2
+    x: 342
+    y: 387.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-553010252661492325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 6296f5b8-085b-44d2-8d9d-908e11a52e4d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: We found a strange device near you. None of us thought anything about it
+    initially. It wasn't until a member of the expedition recognized an inscription
+    on the object and recalled their grandmother telling a tall-tale about a foreigner
+    and a calamity.
+  children:
+  - 05878ebb-1877-41c0-bb06-9ef495c398b3
+  rect:
+    serializedVersion: 2
+    x: 41.999985
+    y: 732.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772078df8e726fa4487ba6ab0cee5c02, type: 3}
+  m_Name: QuestCompletion-StartingOff
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3041635162358115363}
+  - {fileID: -4253827167843756804}
+  - {fileID: -3691056275740355823}
+  - {fileID: 2844133897106493037}
+  - {fileID: -611305344326233753}
+  - {fileID: -1384866379506939878}
+  - {fileID: 1864522258974803743}
+  - {fileID: -4318433236481439228}
+  - {fileID: -553010252661492325}
+  - {fileID: -3135421826198299512}
+  - {fileID: -5234429862798244828}
+  - {fileID: 3033833572480016034}
+  - {fileID: 3833373425163078904}
+  - {fileID: -6218953532720390151}
+  - {fileID: 6667274644783691312}
+  - {fileID: -6973749608001620499}
+  - {fileID: -6740800233642485530}
+  - {fileID: 333442821239273404}
+  - {fileID: -2051486566987574546}
+  - {fileID: 4450294462144418465}
+  - {fileID: -4565811738921456770}
+  - {fileID: -664638982507805637}
+  - {fileID: 7127202392088912733}
+  - {fileID: -3509783690525036145}
+  - {fileID: 6335840161045110297}
+  - {fileID: -1424429242588134129}
+  - {fileID: -1975995288627455947}
+  - {fileID: -2210864341414878600}
+  - {fileID: -7568066084776182007}
+  - {fileID: 4046427539504909036}
+  - {fileID: -8324964154609682623}
+  - {fileID: 180044129828723050}
+  - {fileID: -5172853217854158440}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &180044129828723050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: f8b1bb21-330c-40c8-b93c-f28690f830b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes!
+  children:
+  - 58cdc965-838c-4606-af4b-3e7d2c9c9656
+  rect:
+    serializedVersion: 2
+    x: 1235
+    y: 685
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 2
+        parameters:
+        - Quest - Check the Cave
+        - FindCorpse
+        negate: 0
+--- !u!114 &333442821239273404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 226c912b-f027-46fb-b0a4-d1aa03fd7bf5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'If you continue on the path leading out of town, you will not miss them.
+    Please bring back some samples. I suspect that whatever is causing the agitation
+    is biological. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 654
+    y: 1442
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1864522258974803743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 574c41c3-1758-489e-9b70-5fb4c1cafac9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Yes, this is true. Before any further discussion, I need to return your
+    belongings to you. Please forgive us for assuming ownership over them, but we
+    felt that the security of our town was at stake. '
+  children:
+  - 9f9b08f0-4fd2-4483-afdf-349ee7993a94
+  rect:
+    serializedVersion: 2
+    x: 184
+    y: 606.99994
+    width: 200
+    height: 100
+  onEnterAction: CompleteObjective
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2844133897106493037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 8436c50e-9bf7-4673-b0f3-f72222f5194f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Our guild supports and trains adventurers in their quests to explore new
+    lands, defeat monsters, and bring glory to their name.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 540
+    y: 5
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3033833572480016034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 2c2e288a-6ee6-467c-83e3-c646ef47d472
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Thanks for that boost of confidence?
+  children:
+  - 34086c03-d39e-428e-86b4-9407fea896c3
+  rect:
+    serializedVersion: 2
+    x: 486
+    y: 933
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3041635162358115363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: e032fbf4-1515-4918-9206-c6153df066ca
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Welcome to the Adventurer's Guild, where we uphold the values of courage,
+    exploration and community.
+  children:
+  - 8c3405ba-b8aa-40c7-8c21-007188a61e09
+  - 4799366f-0e6f-4f9f-b6bb-89e77d6b70eb
+  - 8937343e-7a67-472c-974e-5b5daaac5a67
+  - 50e08090-05a9-48b5-ac1d-5986a9d7e2fc
+  - 0d73d032-b784-4ed6-94b6-6a94ccc51f37
+  - 531442d7-7172-4064-9a91-7fb1d3f56358
+  rect:
+    serializedVersion: 2
+    x: 50.000015
+    y: 150
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3833373425163078904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 34086c03-d39e-428e-86b4-9407fea896c3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '*boisterous laughter* Sorry, I couldn''t help myself. Sometimes I need to
+    create my own humor. Regardless if my jokes reach you or not, there is suspicious
+    activity surrounding your appearance. The nearby forest has always been home
+    to animals such as wolves, deer and moose. They are normally not problematic
+    and keep to themselves, but there has been an increasing amount of reports of
+    the animals approaching the walls of our town and acting as if they were on edge.'
+  children:
+  - 6b6f5210-fe37-45ea-9fbe-15a8c34663fc
+  rect:
+    serializedVersion: 2
+    x: 73.999985
+    y: 1090
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4046427539504909036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 85a2c110-11b3-4cb0-91ae-ea7b26260a80
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Did you find any sign of the team?
+  children:
+  - b500bf21-1368-491c-b3c7-ec4c5196cc64
+  - f8b1bb21-330c-40c8-b93c-f28690f830b0
+  rect:
+    serializedVersion: 2
+    x: 934
+    y: 732
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4450294462144418465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: fcdad959-6e3e-45f0-976c-1d693f9b7426
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Indeed, that is accurate. However, before we proceed any further, there is
+    a matter that requires our attention.
+  children:
+  - 9f9b08f0-4fd2-4483-afdf-349ee7993a94
+  rect:
+    serializedVersion: 2
+    x: 625
+    y: 472
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6335840161045110297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: e611dd03-7099-422b-a8f7-cd89c0c5e2fe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Okay.
+  children:
+  - 6909a0e7-bcb2-4645-93f9-8ec0f361185e
+  rect:
+    serializedVersion: 2
+    x: 1512
+    y: 330
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6667274644783691312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 7f5015f1-a705-44b7-aaa7-61b13f8c759c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Not yet, but I am afraid that it is inevitable. I understand that you were
+    recently injured, but we do not have the available personell to investigate the
+    encroaching wolf pack. If you would do this for us I would be in your debt. '
+  children:
+  - 65660d03-5da7-471c-97fc-54ae3ea90110
+  - 640c6456-91ff-434c-86e5-cdda64e5b5c6
+  rect:
+    serializedVersion: 2
+    x: 205.00006
+    y: 1281
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7127202392088912733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 6234c0f3-57c9-4bbe-aa30-85bb82310d7d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have the samples!
+  children:
+  - 2e550521-3ba9-415b-870a-cb0e3c41b101
+  rect:
+    serializedVersion: 2
+    x: 980
+    y: 190
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: RemoveItems-Blood
+  condition:
+    and:
+    - or:
+      - predicate: 2
+        parameters:
+        - Quest - Gather Wolf Blood Sample
+        - LootWolfBlood
+        negate: 0
+    - or:
+      - predicate: 4
+        parameters:
+        - Quest - Gather Wolf Blood Sample
+        - LootWolfBlood
+        negate: 0

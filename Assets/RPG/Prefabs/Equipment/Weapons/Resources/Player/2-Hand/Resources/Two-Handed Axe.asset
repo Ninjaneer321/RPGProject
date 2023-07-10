@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: Two-Handed Axe
+  m_EditorClassIdentifier: 
+  itemID: 77ef5724-2de3-4c09-b1c3-8832183bffca
+  displayName: Hardened Large Axe
+  description: "Two-Hand Axe            \n21-30 Damage / Speed 3.5\n(7.28 damage
+    per second)\n+3 Strength\n+1 Stamina\nRequires Level 4"
+  icon: {fileID: 21300000, guid: 458c7e822f03ee64aa9f4b4c10fb1192, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 576
+  category: 2
+  requiredLevel: 4
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 10
+    value: 3
+  - stat: 12
+    value: 1
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: f23eb8f93f4c3e141af551ea35a0e314, type: 2}
+  weaponPrefab: {fileID: 1203683121323722913, guid: 26540db55e9bf314099b8cb24c08043b, type: 3}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 30
+  weaponDamageBottomEnd: 21
+  percentageBonus: 0
+  weaponRange: 2
+  weaponSpeed: 3.5
+  projectile: {fileID: 0}
+  isTwoHanded: 1
+  mainHand: 2

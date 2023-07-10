@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: SkeletonSword
+  m_EditorClassIdentifier: 
+  itemID: 9b1e4f72-77f8-4892-a999-18c47fab48b3
+  displayName: 
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 0
+  requiredLevel: 0
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: 90549a5f0130eb6448544a020d0db235, type: 2}
+  weaponPrefab: {fileID: 5530842684504028551, guid: 3e496f17a5524de46a4150189adb6f3f, type: 3}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 10
+  weaponDamageBottomEnd: 4
+  percentageBonus: 0
+  weaponRange: 2.5
+  weaponSpeed: 3
+  projectile: {fileID: 0}
+  isTwoHanded: 0
+  mainHand: 0

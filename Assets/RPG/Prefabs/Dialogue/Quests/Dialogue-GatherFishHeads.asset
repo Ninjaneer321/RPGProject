@@ -1,0 +1,380 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7287188528431905377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: cb637749-cd1b-459a-8c79-f096d1e951f3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I accept.
+  children:
+  - 644f7121-0017-4562-9479-a02db677f5f0
+  rect:
+    serializedVersion: 2
+    x: 943
+    y: 26.999985
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6581130683760473351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 87980f1b-d69b-4a7d-8f10-423418f1f9c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Goodbye.
+  children:
+  - 75a1fe5c-d344-4569-86db-4e18e58503d1
+  rect:
+    serializedVersion: 2
+    x: 468
+    y: 481
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 4
+        parameters:
+        - Quest - Gather Fish Heads
+        - Quest - Gather Fish Heads
+        negate: 0
+--- !u!114 &-5213199600570233575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 75a1fe5c-d344-4569-86db-4e18e58503d1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Bye.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1202
+    y: 478
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4541501941945657362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 78c487bc-ece0-42c7-a738-0ad003b09c56
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What was I doing again?
+  children:
+  - 2cde5dba-bc66-4a6a-a679-77295527e145
+  rect:
+    serializedVersion: 2
+    x: 413
+    y: 175.00002
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Quest - Gather Fish Heads
+        - Quest - Gather Fish Heads
+        negate: 0
+    - or:
+      - predicate: 5
+        parameters:
+        - Quest - Gather Fish Heads
+        - Quest - Gather Fish Heads
+        negate: 0
+--- !u!114 &-4222817370887972444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: e7d4e140-47f5-4810-b05a-4cf5239df0c9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I think in this situation I am supposed to ask if you have heard any rumors?
+  children:
+  - a71a33df-be53-450b-aa24-edafde153d55
+  rect:
+    serializedVersion: 2
+    x: 399
+    y: 26.999985
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 2
+        parameters:
+        - Quest - Gather Fish Heads
+        - Quest - Gather Fish Heads
+        negate: 0
+--- !u!114 &-2987899599847822551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: a7d66851-766f-45ee-9e8c-7419a97b8dea
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Greetings, traveler. Do you need something?
+  children:
+  - e7d4e140-47f5-4810-b05a-4cf5239df0c9
+  - 82644722-05b5-466b-9659-e68a48de7ffe
+  - 78c487bc-ece0-42c7-a738-0ad003b09c56
+  - 87980f1b-d69b-4a7d-8f10-423418f1f9c8
+  rect:
+    serializedVersion: 2
+    x: 69
+    y: 251.99997
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1844880655630787482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 2cde5dba-bc66-4a6a-a679-77295527e145
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Have you grown senile in the short time we've spoken? I am waiting on my
+    fish heads.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 672
+    y: 244.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-909713214885719200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 644f7121-0017-4562-9479-a02db677f5f0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you aren't armed, I suggest finding a weapon quickly. You won't survive
+    out there without one.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1254
+    y: 71.999985
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772078df8e726fa4487ba6ab0cee5c02, type: 3}
+  m_Name: Dialogue-GatherFishHeads
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2987899599847822551}
+  - {fileID: -4222817370887972444}
+  - {fileID: 2019819198630920183}
+  - {fileID: -1844880655630787482}
+  - {fileID: 1340479694246699979}
+  - {fileID: 533743935747606676}
+  - {fileID: -6581130683760473351}
+  - {fileID: -4541501941945657362}
+  - {fileID: -5213199600570233575}
+  - {fileID: 4349925446721264870}
+  - {fileID: -7287188528431905377}
+  - {fileID: -909713214885719200}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &533743935747606676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: fc1f5865-836c-44b2-93b8-c4cf71c545b1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: So you do! Thank you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 685
+    y: 369
+    width: 200
+    height: 100
+  onEnterAction: CompleteObjective
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1340479694246699979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 82644722-05b5-466b-9659-e68a48de7ffe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have the fishmen heads for you.
+  children:
+  - fc1f5865-836c-44b2-93b8-c4cf71c545b1
+  rect:
+    serializedVersion: 2
+    x: 404
+    y: 322
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: RemoveItem
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Quest - Gather Fish Heads
+        - Quest - Gather Fish Heads
+        negate: 0
+    - or:
+      - predicate: 9
+        parameters:
+        - d360def5-8743-42c5-b477-e29f7a9e6147
+        - 6
+        negate: 0
+--- !u!114 &2019819198630920183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: a71a33df-be53-450b-aa24-edafde153d55
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'The scuttlebutt has it that a group of fishmen have been seen skulking just
+    outside of the walls of Oakcross. I''ve heard tale of their heads being delicacies.
+    *thinking* If you brought me six fishmen heads, I will make it worth your while.  '
+  children:
+  - e957247a-3db4-4915-9d41-a52c6b156c66
+  - cb637749-cd1b-459a-8c79-f096d1e951f3
+  rect:
+    serializedVersion: 2
+    x: 704
+    y: 111.999985
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4349925446721264870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: e957247a-3db4-4915-9d41-a52c6b156c66
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Maybe later.
+  children:
+  - 75a1fe5c-d344-4569-86db-4e18e58503d1
+  rect:
+    serializedVersion: 2
+    x: 934
+    y: 263.99997
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

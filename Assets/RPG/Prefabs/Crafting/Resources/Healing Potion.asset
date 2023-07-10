@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Healing Potion
+  m_EditorClassIdentifier: 
+  itemID: aad2496e-9f43-4288-9f3a-268c82b10502
+  displayName: Healing Potion
+  description: Restores 35 HP.
+  icon: {fileID: 21300000, guid: b5bca3e0e51c1f64aadf395615ed5ccd, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 0
+  category: 0
+  consumable: 1
+  usageCondition:
+    and: []
+  targetingStrategy: {fileID: 11400000, guid: d681bfc79af255940abab3188bca7eaf, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 9c9f96ec148240d4bad0a1aa63a65073, type: 2}
+  cooldownTime: 0
+  manaCost: 0
+  hasCastTime: 0
+  castTime: 1
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 0}
+  abilityRange: 0
+  summonCircleDestroyDelay: 0

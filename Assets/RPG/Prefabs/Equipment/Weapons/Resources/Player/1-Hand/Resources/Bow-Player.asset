@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: Bow-Player
+  m_EditorClassIdentifier: 
+  itemID: 076abe99-8506-46d1-9191-46f337b34b76
+  displayName: Longbow
+  description: Attack enemies from afar with this!
+  icon: {fileID: 21300000, guid: 9415af11d73bb804c8d24343e1351132, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: 75ba7a856373e6d4da6206644b1fed81, type: 3}
+  stackable: 0
+  price: 69
+  category: 2
+  allowedEquipLocation: 5
+  animatorOverride: {fileID: 22100000, guid: 84084fb0471cc0b498be9a17678f93b2, type: 2}
+  weaponPrefab: {fileID: 1347569860833010261, guid: f7c98fd3b0811a1489e9be23387fe77b, type: 3}
+  weaponDamage: 10
+  percentageBonus: 0
+  weaponRange: 20
+  weaponSpeed: 3
+  isRightHanded: 0
+  projectile: {fileID: 6693640217874108116, guid: 2b59569177e149942b9f1a4bd573378a, type: 3}

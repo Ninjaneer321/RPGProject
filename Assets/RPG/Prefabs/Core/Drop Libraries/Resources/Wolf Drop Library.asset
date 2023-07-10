@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa271a749bd26814bacb5c85ce3383a3, type: 3}
+  m_Name: Wolf Drop Library
+  m_EditorClassIdentifier: 
+  potentialDrops:
+  - item: {fileID: 11400000, guid: dafd8e2723527464289ee2688c592318, type: 2}
+    relativeChance:
+    - 100
+    minNumberOfItems: 01000000
+    maxNumberOfItems: 01000000
+  - item: {fileID: 11400000, guid: 3abf9531e3667a448af32ad5cb4d89b4, type: 2}
+    relativeChance:
+    - 95
+    minNumberOfItems: 01000000
+    maxNumberOfItems: 01000000
+  - item: {fileID: 11400000, guid: 66abbbbfbe7b9f746af185fa4cf010e9, type: 2}
+    relativeChance:
+    - 95
+    minNumberOfItems: 01000000
+    maxNumberOfItems: 01000000
+  dropChancePercentage:
+  - 100
+  minNumberOfDrops: 02000000
+  maxNumberOfDrops: 06000000

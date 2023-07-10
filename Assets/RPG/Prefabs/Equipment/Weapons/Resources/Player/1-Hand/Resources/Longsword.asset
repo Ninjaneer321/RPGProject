@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: Longsword
+  m_EditorClassIdentifier: 
+  itemID: 6eb54055-4a36-4323-9c0c-c4ecaec29013
+  displayName: Longsword
+  description: "One-Hand Sword              \n7-11 Damage / Speed 2.50\n(3.60 damage
+    per second)\nRequires Level 2"
+  icon: {fileID: 21300000, guid: 2b9775e0a305b8e48802744cdb19a5eb, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 130
+  category: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: 9645e84c5465b7a49bd369010db81fb6, type: 2}
+  weaponPrefab: {fileID: 6290066852969694541, guid: d0eeaf93aaa5c5f4b9224265774841c6, type: 3}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 11
+  weaponDamageBottomEnd: 7
+  percentageBonus: 0
+  weaponRange: 2
+  weaponSpeed: 2.5
+  projectile: {fileID: 0}
+  isTwoHanded: 0
+  mainHand: 0

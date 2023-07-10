@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238324871cfb34841b3c1f8e390b7cc2, type: 3}
+  m_Name: ShadowboltProjectileEffect
+  m_EditorClassIdentifier: 
+  projectileToSpawn: {fileID: 759399835248532783, guid: c03ab963ec9283b499c6795a48d86099, type: 3}
+  damage: 40
+  isRightHand: 0

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d6147847bd8d6429cd7df4482aac7f, type: 3}
+  m_Name: SkillProgression
+  m_EditorClassIdentifier: 
+  skillClasses:
+  - characterClass: 0
+    skills:
+    - skill: 0
+      levels: 0100000002000000030000000400000005000000
+      experienceToLevel:
+      - 0
+      - 40
+      - 80
+      - 120
+      - 160
+    - skill: 1
+      levels: 0100000002000000030000000400000005000000
+      experienceToLevel:
+      - 0
+      - 80
+      - 160
+      - 240
+      - 320
+    - skill: 2
+      levels: 0100000002000000030000000400000005000000
+      experienceToLevel:
+      - 0
+      - 80
+      - 160
+      - 240
+      - 320

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: SITTING-BaseNPCWeapon-Male
+  m_EditorClassIdentifier: 
+  itemID: 3b1d2824-0464-49a7-bb34-10f1a09d0050
+  displayName: 
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 0
+  requiredLevel: 0
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers: []
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: f7a9eb81587a2984891be80f72d30b16, type: 2}
+  defaultAnimatorController: {fileID: 9100000, guid: f04b5aeb9a1d2f14c96e756f3ba5f8a7, type: 2}
+  weaponPrefab: {fileID: 0}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 0
+  weaponDamageBottomEnd: 0
+  percentageBonus: 0
+  weaponRange: 0
+  weaponSpeed: 0
+  projectile: {fileID: 0}
+  isTwoHanded: 0
+  mainHand: 0

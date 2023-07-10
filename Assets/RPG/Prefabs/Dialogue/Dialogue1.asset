@@ -1,0 +1,401 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8048620265935826493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 5c953223-c1c2-45de-a1b7-ffa17de564d7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: This sounds like a serious case. It is possible that somebody used an extremely
+    powerful spell to erase your memories. But we won't know for sure until we investigate
+    further.
+  children:
+  - bd3d89af-c90d-43bf-bb93-8cb07224565d
+  rect:
+    serializedVersion: 2
+    x: 1769
+    y: 247.99995
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6705555561043913762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 04f0c0be-95f2-422f-9bde-8620cf01477e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Where can I find the Adventurer's Guild?
+  children:
+  - af0e881b-ca55-4cb5-a2a6-0ac2827a9d10
+  rect:
+    serializedVersion: 2
+    x: 2560
+    y: 130.99995
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4307105669160495929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: af0e881b-ca55-4cb5-a2a6-0ac2827a9d10
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Once you leave this home head west along the road. It is the first building
+    you will come across. (Give Alistar Quest - Reward Starting Gear)
+  children:
+  - c86ed685-d1b0-407f-8f18-f9f7d46fd0cf
+  rect:
+    serializedVersion: 2
+    x: 2822
+    y: 219.99994
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &-4035359464782922430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 65f6e771-b65e-4dc0-99bd-5a2de009eabf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: How did I end up in the forest?
+  children:
+  - da2e3f31-883e-4066-bfdf-46c9f6c817ce
+  rect:
+    serializedVersion: 2
+    x: 569
+    y: 81
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-56913542396147010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 049b190b-811f-4a23-a35f-4b9403196faa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I.. don''t know. When I try to recall the past, there is just a grey haze.   '
+  children:
+  - 5c953223-c1c2-45de-a1b7-ffa17de564d7
+  rect:
+    serializedVersion: 2
+    x: 1490
+    y: 104.99997
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772078df8e726fa4487ba6ab0cee5c02, type: 3}
+  m_Name: Dialogue1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 716776670273164664}
+  - {fileID: 1758769313458461069}
+  - {fileID: 8075530416097159110}
+  - {fileID: -4035359464782922430}
+  - {fileID: 4085685066154486676}
+  - {fileID: 8659134534640079758}
+  - {fileID: 6435064639536186729}
+  - {fileID: -56913542396147010}
+  - {fileID: -8048620265935826493}
+  - {fileID: 6193759149402272368}
+  - {fileID: 6754551120760130797}
+  - {fileID: -6705555561043913762}
+  - {fileID: -4307105669160495929}
+  - {fileID: 6818450299450033860}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &716776670273164664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: f2b82197-92f2-4844-94da-6f19bcfa1679
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I am glad to see that you have regained consciousness.
+  children:
+  - 749a3b53-f6af-4473-ae61-36bf0036fe0d
+  rect:
+    serializedVersion: 2
+    x: 24.000015
+    y: 244.99998
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1758769313458461069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 749a3b53-f6af-4473-ae61-36bf0036fe0d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What happened to me? Where am I?
+  children:
+  - 4ae04825-d7b2-4981-b285-02cfa21e0f3d
+  rect:
+    serializedVersion: 2
+    x: 179.00002
+    y: 92
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4085685066154486676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: da2e3f31-883e-4066-bfdf-46c9f6c817ce
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: We are not sure. We were hoping to get some answers from you when you awoke.
+  children:
+  - 291e4f33-cccf-490a-b55b-66f55ae3bc3e
+  rect:
+    serializedVersion: 2
+    x: 791
+    y: 260
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6193759149402272368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: bd3d89af-c90d-43bf-bb93-8cb07224565d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What should I do now?
+  children:
+  - f0091592-7a96-4e24-8d70-b5bba5fde1a8
+  rect:
+    serializedVersion: 2
+    x: 2044
+    y: 143.99997
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6435064639536186729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: eac1f23f-8261-4afe-9dd7-6490d67cb104
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: That is very unfortunate.. Where do you live? That might give us a clue on
+    how you ended up here.
+  children:
+  - 049b190b-811f-4a23-a35f-4b9403196faa
+  rect:
+    serializedVersion: 2
+    x: 1251
+    y: 241.99997
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6754551120760130797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: f0091592-7a96-4e24-8d70-b5bba5fde1a8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'First, you need to make contact with the Adventurer''s Guild. Alistar, the
+    Guildmaster, requested your company once you regained conciousness. He led the
+    expedition that ultimately ended in your rescue. '
+  children:
+  - 04f0c0be-95f2-422f-9bde-8620cf01477e
+  rect:
+    serializedVersion: 2
+    x: 2303
+    y: 226.99995
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6818450299450033860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: c86ed685-d1b0-407f-8f18-f9f7d46fd0cf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Thank you. Goodbye.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3076
+    y: 148.99995
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &8075530416097159110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 4ae04825-d7b2-4981-b285-02cfa21e0f3d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You were found unconscious in the forest outside of town by one of our expedition
+    groups from the Adventurer's Guild. You are very lucky to be alive.
+  children:
+  - 65f6e771-b65e-4dc0-99bd-5a2de009eabf
+  rect:
+    serializedVersion: 2
+    x: 367
+    y: 236.00002
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &8659134534640079758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 291e4f33-cccf-490a-b55b-66f55ae3bc3e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I have no memory of the last few days. The last thing I remember is that
+    I fell asleep in my home. '
+  children:
+  - eac1f23f-8261-4afe-9dd7-6490d67cb104
+  rect:
+    serializedVersion: 2
+    x: 1031
+    y: 93.999985
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

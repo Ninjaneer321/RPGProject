@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c3bcc027944a047999a5bc27b8f4bf, type: 3}
+  m_Name: Steel Platelegs
+  m_EditorClassIdentifier: 
+  itemID: e32d2f7b-acee-4f0f-9298-6b0e74f4b8ba
+  displayName: Steel Platelegs
+  description: 'A durable set of platelegs.
+
+    +3 Defence
+
+    Requires Level 3'
+  icon: {fileID: 21300000, guid: b0f3a3f79958cb540a0ef1c52a9c6d5a, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 215
+  category: 1
+  allowedEquipLocation: 3
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 9
+    value: 3
+  percentageModifiers: []
+  objectsToActivateMale:
+  - category: Male_10_Hips
+    index: 20
+  objectsToActivateFemale:
+  - category: Female_10_Hips
+    index: 20
+  colorChanges:
+  - category: _Color_Metal_Primary
+    color: {r: 0.8117647, g: 0.83137256, b: 0.8509804, a: 0}
+  - category: _Color_Metal_Secondary
+    color: {r: 0.8117647, g: 0.83137256, b: 0.8509804, a: 0}
+  slotsToDeactivate: []

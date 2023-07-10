@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7905945927602141675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 0992dbed-da82-4f73-a97a-f0bf8b79fd0a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have completed this quest!
+  children:
+  - 30e36d69-b943-40be-a00b-d0a9453cd5d5
+  rect:
+    serializedVersion: 2
+    x: 334
+    y: 351
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 3
+        parameters:
+        - Quest - Kill Skeleton
+        - 
+        negate: 0
+--- !u!114 &-6408577383107586695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 392d610a-2a65-4e54-b27f-1a9a9fa20989
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I have killed the skeleton.
+  children:
+  - 6aca47b5-3e38-41d3-a444-e271cfa3322b
+  rect:
+    serializedVersion: 2
+    x: 344
+    y: 181.99995
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 11
+        parameters:
+        - Skeleton Enemy
+        - 1
+        negate: 0
+    - or:
+      - predicate: 4
+        parameters:
+        - Quest - Kill Skeleton
+        - 1
+        negate: 0
+--- !u!114 &-5484962640611809800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 30e36d69-b943-40be-a00b-d0a9453cd5d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Alright.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 652
+    y: 353
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772078df8e726fa4487ba6ab0cee5c02, type: 3}
+  m_Name: Kill Quest Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6744947450919354554}
+  - {fileID: 6706862768149090864}
+  - {fileID: 1139365336660161629}
+  - {fileID: -6408577383107586695}
+  - {fileID: 6831389960070314712}
+  - {fileID: -7905945927602141675}
+  - {fileID: -5484962640611809800}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1139365336660161629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 63917b64-bc87-4b56-9f83-8c7443d00943
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Here you go.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 638
+    y: 62
+    width: 200
+    height: 100
+  onEnterAction: GiveQuest
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6706862768149090864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: b3385212-97f5-49d7-83f4-469f18672c32
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes!
+  children:
+  - 63917b64-bc87-4b56-9f83-8c7443d00943
+  rect:
+    serializedVersion: 2
+    x: 344
+    y: 7
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6744947450919354554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 0e029cb2-6f2c-45f1-8a95-73a0a8e466b1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Do you want a quest?
+  children:
+  - b3385212-97f5-49d7-83f4-469f18672c32
+  - 392d610a-2a65-4e54-b27f-1a9a9fa20989
+  - 0992dbed-da82-4f73-a97a-f0bf8b79fd0a
+  rect:
+    serializedVersion: 2
+    x: 36
+    y: 84
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &6831389960070314712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7364a8a78396b42adf86d1f02982b8, type: 3}
+  m_Name: 6aca47b5-3e38-41d3-a444-e271cfa3322b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 642
+    y: 209.99998
+    width: 200
+    height: 100
+  onEnterAction: CompleteObjective
+  onExitAction: 
+  condition:
+    and: []

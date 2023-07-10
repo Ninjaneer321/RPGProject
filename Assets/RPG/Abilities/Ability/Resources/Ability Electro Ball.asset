@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Ability Electro Ball
+  m_EditorClassIdentifier: 
+  itemID: 030c3127-7061-42a4-bcc7-6f0df6077359
+  displayName: Electro Ball
+  description: 'Ability
+
+    30 yd range
+
+    2.8 second cast time. Costs 55 mana.
+
+    Conjures
+    a ball of electric magic dealing 25 damage.
+
+    10 second cooldown time.
+
+    Requires
+    Level 2'
+  icon: {fileID: 21300000, guid: 4168b2c35ad62864e89c31b4f92d348f, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 150
+  category: 4
+  consumable: 0
+  usageCondition:
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 2
+        - 
+        negate: 0
+  targetingStrategy: {fileID: 11400000, guid: 5f2dea5a0e6889f4eab8f6da48c8cfe3, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 2af0d203a45e62d4ebeeb376b44e7eea, type: 2}
+  - {fileID: 11400000, guid: 02bdb628706a83049957b5fbe1e8602d, type: 2}
+  cooldownTime: 10
+  manaCost: 55
+  hasCastTime: 1
+  castTime: 2.8
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 4213198960968658, guid: 56b7a0c76cf79714994f907d7c17347b, type: 3}
+  abilityRange: 30
+  summonCircleDestroyDelay: 0.5

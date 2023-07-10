@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 557f60bf5a981b9429cd0978b3a65e3d, type: 3}
+  m_Name: ShadowboltDelay
+  m_EditorClassIdentifier: 
+  delay: 0.32
+  delayedEffects:
+  - {fileID: 11400000, guid: 64cc6eca027c99547a47b35a938b91bb, type: 2}

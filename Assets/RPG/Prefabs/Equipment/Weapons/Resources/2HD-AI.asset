@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: 2HD-AI
+  m_EditorClassIdentifier: 
+  itemID: ce7e376d-6856-4d5b-a87d-8d4ff3fa39db
+  displayName: 
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  price: 0
+  category: 2
+  requiredLevel: 0
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  animatorOverride: {fileID: 22100000, guid: 250974f7338a3a341a62b5731deb946a, type: 2}
+  weaponPrefab: {fileID: 1203683121323722913, guid: 26540db55e9bf314099b8cb24c08043b, type: 3}
+  weaponDamageTopEnd: 0
+  weaponDamageBottomEnd: 0
+  percentageBonus: 0
+  weaponRange: 2
+  weaponSpeed: 2.8
+  isRightHanded: 1
+  projectile: {fileID: 0}

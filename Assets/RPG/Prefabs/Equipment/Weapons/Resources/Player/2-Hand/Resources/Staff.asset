@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599b65b16b2956c45b2a9d4d634c16d7, type: 3}
+  m_Name: Staff
+  m_EditorClassIdentifier: 
+  itemID: ddce2fca-a94f-4696-9c02-b473bd6f8f32
+  displayName: Acolyte's Staff
+  description: "Two-Hand Staff         \n13-16 Damage / Speed 3.5\n(4.14 damage per
+    second)\n+1 Intelligence\n+4 Mana Regen\nRequires Level 2"
+  icon: {fileID: 21300000, guid: 83851fda34093e6489a4a26c4a705105, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 200
+  category: 2
+  requiredLevel: 2
+  allowedEquipLocation: 5
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 13
+    value: 2
+  - stat: 5
+    value: 4
+  percentageModifiers: []
+  animatorOverride: {fileID: 22100000, guid: 5417c0e4fbc417d4daa7b2f56d4f6fa0, type: 2}
+  weaponPrefab: {fileID: 6290066852969694541, guid: 3f85998113d4c06448b939840b562c96, type: 3}
+  weaponPrefab2: {fileID: 0}
+  weaponDamageTopEnd: 16
+  weaponDamageBottomEnd: 13
+  percentageBonus: 0
+  weaponRange: 2
+  weaponSpeed: 3.5
+  projectile: {fileID: 0}
+  isTwoHanded: 1
+  mainHand: 2

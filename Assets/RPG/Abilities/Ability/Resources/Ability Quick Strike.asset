@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Ability Quick Strike
+  m_EditorClassIdentifier: 
+  itemID: 14bbf62d-b11d-447a-99b5-5f37e82500ba
+  displayName: Quick Strike
+  description: 'Ability
+
+    Melee Range
+
+    Instant cast time.  Costs 15 mana.
+
+    Strike
+    quickly at the enemy, causing 10 damage.
+
+    6 second cooldown time.
+
+    Requires
+    Level 1'
+  icon: {fileID: 21300000, guid: 6ec1c38865f239245b0bca283e3e287b, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 0
+  category: 0
+  consumable: 0
+  usageCondition:
+    and: []
+  targetingStrategy: {fileID: 11400000, guid: 5f2dea5a0e6889f4eab8f6da48c8cfe3, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 6649e581c1c512a43b02f317c2ed148f, type: 2}
+  - {fileID: 11400000, guid: ed0fb2e92c3622d4e84a8818b70dbffa, type: 2}
+  cooldownTime: 6
+  manaCost: 15
+  hasCastTime: 0
+  castTime: 1
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 0}
+  abilityRange: 5
+  summonCircleDestroyDelay: 0

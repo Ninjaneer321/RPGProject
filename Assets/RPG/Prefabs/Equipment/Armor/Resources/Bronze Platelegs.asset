@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39c3bcc027944a047999a5bc27b8f4bf, type: 3}
+  m_Name: Bronze Platelegs
+  m_EditorClassIdentifier: 
+  itemID: 40042e06-aeca-4d92-90ea-5fe7c2fadd13
+  displayName: Bronze platelegs
+  description: 'A durable set of platelegs.
+
+    +2 Defence
+
+    Requires Level 2'
+  icon: {fileID: 21300000, guid: f29e78f26e2e6ea49a26e6d71ef03cd8, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 178
+  category: 1
+  allowedEquipLocation: 3
+  equipCondition:
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 2
+        - 
+        negate: 0
+  additiveModifiers:
+  - stat: 8
+    value: 2
+  percentageModifiers: []
+  objectsToActivateMale:
+  - category: Male_10_Hips
+    index: 20
+  objectsToActivateFemale:
+  - category: Female_10_Hips
+    index: 20
+  colorChanges:
+  - category: _Color_Metal_Primary
+    color: {r: 0.5294118, g: 0.32941177, b: 0.12941177, a: 0}
+  - category: _Color_Metal_Secondary
+    color: {r: 0.5294118, g: 0.32941177, b: 0.12941177, a: 0}
+  slotsToDeactivate: []

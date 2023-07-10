@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bddcde5ec67d64ea2be6064843a7ce, type: 3}
+  m_Name: Ability Shadow Bolt
+  m_EditorClassIdentifier: 
+  itemID: a6353f19-68a6-4d18-9ccb-a9f9036f1a8d
+  displayName: Shadow Ball
+  description: 'Ability
+
+    35 yd range
+
+    3.2 second cast time. Costs 75 mana.
+
+    A
+    small ball of shadow magic dealing 40 damage.
+
+    18 second cooldown time.
+
+    Requires
+    Level 4'
+  icon: {fileID: 21300000, guid: 0889961c37bf0994f921c7082fcb48f7, type: 3}
+  pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
+  stackable: 0
+  price: 250
+  category: 4
+  consumable: 0
+  usageCondition:
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 4
+        - 1
+        negate: 0
+  targetingStrategy: {fileID: 11400000, guid: 5f2dea5a0e6889f4eab8f6da48c8cfe3, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 2af0d203a45e62d4ebeeb376b44e7eea, type: 2}
+  - {fileID: 11400000, guid: c4235c8ac260c074291455fbfaf8939a, type: 2}
+  cooldownTime: 18
+  manaCost: 75
+  hasCastTime: 1
+  castTime: 3.2
+  isBeingCasted: 0
+  summonCirclePrefab: {fileID: 6424195794906101947, guid: d63c80fa9ab816241baec6d5693514c9, type: 3}
+  abilityRange: 35
+  summonCircleDestroyDelay: 0.5
