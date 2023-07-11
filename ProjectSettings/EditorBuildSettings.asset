@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu Scene.unity
+    guid: 26d679abfe931b04f82667e473d0b5fe
+  - enabled: 1
+    path: Assets/HomeScene.unity
+    guid: 921add92e6c45df43ae2b25f5946feab
+  - enabled: 1
+    path: Assets/RPG/Scenes/WorldScene/WorldScene/WorldScene.unity
+    guid: 7250976012e0be44c93ab097e1850b35
+  - enabled: 1
+    path: Assets/AdventurersGuildNew.unity
+    guid: f117062ae6850004880da98bb7b8af6e
+  - enabled: 1
+    path: Assets/TavernScene.unity
+    guid: 3318d15fad15692468fca0694f31319a
+  - enabled: 1
+    path: Assets/ForgeScene.unity
+    guid: 5be964f37c794594696aea2f26596803
+  - enabled: 1
+    path: Assets/NewCaveScene.unity
+    guid: 4b667e1f9e8ded1429dafc2f74a5d22c
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
