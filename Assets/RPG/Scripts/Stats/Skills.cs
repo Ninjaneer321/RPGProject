@@ -9,7 +9,8 @@ namespace RPG.Stats
     {
         Foraging,
         Crafting,
-        Mining
+        Mining,
+        PlaceholderSkillUI
     }
 }
 

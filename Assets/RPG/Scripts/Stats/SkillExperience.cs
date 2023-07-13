@@ -12,12 +12,25 @@ public class SkillExperience : MonoBehaviour, ISaveable
     {
         public Skill skill;
         public float experience;
+        public int level = 1;
     }
+
+    [SerializeField] private BaseSkills baseSkills = null;
 
     [SerializeField] private List<SkillExperienceData> skillExperienceDataList = new List<SkillExperienceData>();
 
     public event Action<Skill> onSkillExperienceGained;
 
+    public int GainLevel(Skill skill)
+    {
+        SkillExperienceData skillData = GetSkillData(skill);
+        return skillData.level += 1;
+    }
+    public int GetLevel(Skill skill)
+    {
+        SkillExperienceData skillData = GetSkillData(skill);
+        return skillData != null ? skillData.level : 1;
+    }
     public float GetExperience(Skill skill)
     {
         SkillExperienceData skillData = GetSkillData(skill);
@@ -31,6 +44,8 @@ public class SkillExperience : MonoBehaviour, ISaveable
         }
         return null;
     }
+
+
     public void GainExperience(Skill skill, float experience)
     {
         SkillExperienceData skillData = GetOrCreateSkillData(skill);
@@ -38,7 +53,7 @@ public class SkillExperience : MonoBehaviour, ISaveable
         onSkillExperienceGained?.Invoke(skill);
     }
 
-    private SkillExperienceData GetSkillData(Skill skill)
+    public SkillExperienceData GetSkillData(Skill skill)
     {
         return skillExperienceDataList.Find(data => data.skill == skill);
     }

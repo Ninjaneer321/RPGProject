@@ -69897,13 +69897,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c24cdcd8365de9c4d8eb3fbd82fcd482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSkills: {fileID: 5595906252857697892}
   skillExperienceDataList:
   - skill: 0
     experience: 0
+    level: 0
   - skill: 1
     experience: 0
+    level: 0
   - skill: 2
     experience: 0
+    level: 0
 --- !u!1 &7614045071942486245
 GameObject:
   m_ObjectHideFlags: 0
