@@ -10,7 +10,7 @@ namespace RPG.Stats
         Foraging,
         Crafting,
         Mining,
-        PlaceholderSkillUI
+        Unarmed
     }
 }
 

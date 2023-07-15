@@ -39,15 +39,36 @@ namespace RPG.Stats
         {
             // Cache SkillExperience components
             skillExperiences = new Dictionary<Skill, SkillExperience>();
-            var skillExperienceComponents = GetComponents<SkillExperience>();
-            foreach (var skillExperience in skillExperienceComponents)
+
+            SkillExperience skillExperience = GetComponent<SkillExperience>();
+
+            if (skillExperience != null)
             {
-                Skill skill = (Skill)skillExperience.GetSkill();
-                skillExperiences[skill] = skillExperience;
-                currentLevel = new LazyValue<int>(() => CalculateLevel(skill)); // Initialize LazyValue for each skill  
+                List<Skill> skills = skillExperience.GetSkills();
+                foreach (Skill skill in skills)
+                {
+                    skillExperiences[skill] = skillExperience;
+                    currentLevel = new LazyValue<int>(() => CalculateLevel(skill));
+                }
+            }
+            //foreach (var skillExperience in skillExperienceComponents)
+            //{
+            //    Skill skill = (Skill)skillExperience.GetSkill();
+            //    skillExperiences[skill] = skillExperience;
+            //    currentLevel = new LazyValue<int>(() => CalculateLevel(skill)); // Initialize LazyValue for each skill  
+            //}
+
+            LogDictionary(skillExperiences);
+        }
+        private void LogDictionary(Dictionary<Skill, SkillExperience> dictionary)
+        {
+            foreach (var pair in dictionary)
+            {
+                Skill skill = pair.Key;
+                SkillExperience skillExperience = pair.Value;
+                Debug.Log($"Skill: {skill}, SkillExperience: {skillExperience}");
             }
         }
-
         private void Start()
         {
             //currentLevel = CalculateLevel();
@@ -86,6 +107,7 @@ namespace RPG.Stats
             if (!skillExperiences.ContainsKey(skill))
             {
                 Debug.LogWarning($"SkillExperience component for skill {skill} is missing. Returning default level.");
+                Debug.Log(gameObject.name);
                 return startingLevel;
             }
             SkillExperience skillExperience = GetSkillExperience(skill);

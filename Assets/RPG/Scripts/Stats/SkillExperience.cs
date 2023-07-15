@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Saving;
 using RPG.Stats;
+using RPG.UI;
 using UnityEngine;
 
 public class SkillExperience : MonoBehaviour, ISaveable
@@ -21,6 +22,8 @@ public class SkillExperience : MonoBehaviour, ISaveable
 
     public event Action<Skill> onSkillExperienceGained;
 
+    [SerializeField] SkillExperiencePopupUI skillExperiencePopupUI = null;
+
     public int GainLevel(Skill skill)
     {
         SkillExperienceData skillData = GetSkillData(skill);
@@ -36,21 +39,35 @@ public class SkillExperience : MonoBehaviour, ISaveable
         SkillExperienceData skillData = GetSkillData(skill);
         return skillData != null ? skillData.experience : 0f;
     }
-    public Skill? GetSkill()
+
+    public List<Skill>? GetSkills()
     {
-        if (skillExperienceDataList.Count > 0)
+        List<Skill> skills = new List<Skill>();
+        foreach (var skillData in skillExperienceDataList)
         {
-            return skillExperienceDataList[0].skill;
+            skills.Add(skillData.skill);
         }
-        return null;
+        return skills;
     }
+    //public Skill? GetSkill()
+    //{
+    //    if (skillExperienceDataList.Count > 0)
+    //    {
+    //        return skillExperienceDataList[0].skill;
+    //    }
+    //    return null;
+    //}
 
 
     public void GainExperience(Skill skill, float experience)
     {
         SkillExperienceData skillData = GetOrCreateSkillData(skill);
         skillData.experience += experience;
+        skillExperiencePopupUI.SetExperiencePopup(experience.ToString(), skill);
+        skillExperiencePopupUI.gameObject.SetActive(true);
         onSkillExperienceGained?.Invoke(skill);
+
+
     }
 
     public SkillExperienceData GetSkillData(Skill skill)

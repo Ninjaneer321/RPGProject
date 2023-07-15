@@ -162,6 +162,7 @@ namespace RPG.Stats
             {
                 onDie.Invoke();
                 AwardExperience(instigator);
+                instigator.GetComponent<Fighter>().AwardSkillExperience();
                 Die();
             }
 
@@ -184,6 +185,8 @@ namespace RPG.Stats
 
             experience.GainExperience(baseStats.GetStat(Stat.ExperienceReward));
         }
+
+
 
         private void Die()
         {

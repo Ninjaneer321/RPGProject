@@ -2191,6 +2191,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isAggrevated: 0
+  skillExperienceToReward: 10
   aggrevateEvent:
     m_PersistentCalls:
       m_Calls:

@@ -34,5 +34,6 @@ MonoBehaviour:
   weaponRange: 5
   weaponSpeed: 2.5
   projectile: {fileID: 0}
+  weaponSkill: 3
   isTwoHanded: 0
   mainHand: 2

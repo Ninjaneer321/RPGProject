@@ -21,6 +21,7 @@ namespace RPG.Core
         [SerializeField] public float weaponSpeed;
         [SerializeField] Projectile projectile = null;
 
+        [SerializeField] public Skill weaponSkill;
         const string weaponName = "Weapon";
         const string weaponName2 = "Weapon2";
 

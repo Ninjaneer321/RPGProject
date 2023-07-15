@@ -69745,6 +69745,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isAggrevated: 0
+  skillExperienceToReward: 0
   aggrevateEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -69902,12 +69903,10 @@ MonoBehaviour:
   - skill: 0
     experience: 0
     level: 0
-  - skill: 1
+  - skill: 3
     experience: 0
     level: 0
-  - skill: 2
-    experience: 0
-    level: 0
+  skillExperiencePopupUI: {fileID: 0}
 --- !u!1 &7614045071942486245
 GameObject:
   m_ObjectHideFlags: 0

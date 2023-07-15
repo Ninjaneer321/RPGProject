@@ -39,6 +39,9 @@ namespace RPG.Combat
 
         [SerializeField] public bool isAggrevated = false;
 
+
+        [SerializeField] public float skillExperienceToReward;
+
         [System.Serializable]
         public class HitEvent : UnityEvent 
         {
@@ -130,6 +133,16 @@ namespace RPG.Combat
 
         }
 
+        public void AwardSkillExperience()
+        {
+            //THIS IS ACTUALLY TAKING MY PLAYER FIGHTER COMPONENT'S SKILLEXPERIENCEREWARD AND NOT THE ENEMIES
+
+            SkillExperience skillExperience = GameObject.FindGameObjectWithTag("Player").GetComponent<SkillExperience>();
+            Debug.Log(skillExperienceToReward);
+            Debug.Log(target.GetComponent<Fighter>().skillExperienceToReward);
+            skillExperience.GainExperience(currentWeaponConfig.weaponSkill, target.GetComponent<Fighter>().skillExperienceToReward);
+
+        }
 
         private void StopAttack()
         {

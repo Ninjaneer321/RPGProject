@@ -17,6 +17,11 @@ namespace RPG.Control
             pickup = GetComponent<Pickup>();
         }
 
+        public float ReturnExperienceToGain()
+        {
+            return experienceToGain;
+        }
+
         public CursorType GetCursorType()
         {
             //if (pickup.CanBePickedUp())

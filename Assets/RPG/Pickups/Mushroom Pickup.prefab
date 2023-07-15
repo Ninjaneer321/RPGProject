@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillToGainExperienceToward: 0
-  experienceToGain: 10
+  experienceToGain: 15
 --- !u!1 &7106565869574488589
 GameObject:
   m_ObjectHideFlags: 0
