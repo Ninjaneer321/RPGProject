@@ -7,11 +7,15 @@ namespace RPG.Quests
     public class QuestGiver : MonoBehaviour
     {
         [SerializeField] Quest quest;
+        [SerializeField] AudioSource questAcceptedSound = null;
 
         public void GiveQuest()
         {
-            Debug.Log("GiveQuest");
             QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
+            if (questAcceptedSound != null)
+            {
+                questAcceptedSound.Play();
+            }
             questList.AddQuest(quest);
         }
 

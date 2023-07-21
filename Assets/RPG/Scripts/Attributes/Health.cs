@@ -154,8 +154,10 @@ namespace RPG.Stats
                 Debug.Log("Dodge!");
                 damage = 0;
             }
+
             healthpoints = Mathf.Max(healthpoints - damage, 0);
             takeDamage.Invoke(damage);
+            SetTargetIfNoTarget(instigator);
             GetComponentInChildren<DamageTextSpawner>().Spawn(damage);
 
             if (healthpoints <= 0)
@@ -166,6 +168,18 @@ namespace RPG.Stats
                 Die();
             }
 
+        }
+
+        public void SetTargetIfNoTarget(GameObject targetToSet)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Fighter playerFighter = player.GetComponent<Fighter>();
+
+            if (playerFighter.GetTarget() != null) return;
+            if (playerFighter.GetTarget() == null)
+            {
+                playerFighter.target = targetToSet.GetComponent<Health>();
+            }
         }
         public void Heal(float healthToRestore)
         {

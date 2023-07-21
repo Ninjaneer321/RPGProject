@@ -300,12 +300,11 @@ namespace RPG.Combat
 
             else
             {
-                hitEvent.Invoke();            
+                hitEvent.Invoke();
                 target.GetComponent<Health>().DealDamage(gameObject, damage);
             }
 
         }
-
         void Shoot()
         {
             Hit();

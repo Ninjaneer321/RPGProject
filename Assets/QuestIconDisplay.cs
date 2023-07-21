@@ -93,19 +93,16 @@ public class QuestIconDisplay : MonoBehaviour
             {
                 if (status.GetCompletedCount() < status.GetQuest().GetObjectiveCount() - 1)
                 {
-                    Debug.Log("ShowGoldQuestionMark");
                     questionMarkGrey.SetActive(true);
 
                     //If the NPC has a quest available AND is an NPC that completes a quest, disable the exclaimation point.
 
                     if (exclaimationPointGold.activeSelf)
                     {
-                        Debug.Log("HideExclaimationPoint");
                         exclaimationPointGold.SetActive(false);
                     }
                     if (questionMarkGold.activeSelf)
                     {
-                        Debug.Log("HideGoldQuestionMark");
                         questionMarkGold.SetActive(false);
                     }
                 }
@@ -123,7 +120,6 @@ public class QuestIconDisplay : MonoBehaviour
 
                 //IF NPC IS A QUEST GIVER AND STILL HAS A QUEST PLAYER DOES NOT HAVE, SHOW THE EXCLAIMATION POINT AGAIN
             }
-            Debug.Log(quest);
         }
     }
 
@@ -142,14 +138,12 @@ public class QuestIconDisplay : MonoBehaviour
             {
                 if (status.GetCompletedCount() == status.GetQuest().GetObjectiveCount() - 1)
                 {
-                    Debug.Log("ShowGoldQuestionMark");
                     questionMarkGold.SetActive(true);
 
                     //If the NPC has a quest available AND is an NPC that completes a quest, disable the exclaimation point.
 
                     if (exclaimationPointGold.activeSelf)
                     {
-                        Debug.Log("HideExclaimationPoint");
                         exclaimationPointGold.SetActive(false);
                     }
 

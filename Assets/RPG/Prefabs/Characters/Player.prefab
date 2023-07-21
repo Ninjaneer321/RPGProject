@@ -69570,6 +69570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10af02fc988088d4d8a6c85b1329bf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questPopupUI: {fileID: 0}
+  questCompleteSound: {fileID: 4868967135363474163}
 --- !u!114 &71550596351547748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70086,7 +70088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_audioClip
@@ -70593,6 +70595,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30753f69b290d64e98640158f268eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &3551393252151811055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 801334628163809174}
+    m_Modifications:
+    - target: {fileID: 3293186104808279195, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_Name
+      value: Quest Complete Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+--- !u!82 &4868967135363474163 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8276242313082992924, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+  m_PrefabInstance: {fileID: 3551393252151811055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4145112477315583505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70606,7 +70670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_audioClip

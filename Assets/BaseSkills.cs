@@ -66,7 +66,6 @@ namespace RPG.Stats
             {
                 Skill skill = pair.Key;
                 SkillExperience skillExperience = pair.Value;
-                Debug.Log($"Skill: {skill}, SkillExperience: {skillExperience}");
             }
         }
         private void Start()
@@ -107,7 +106,6 @@ namespace RPG.Stats
             if (!skillExperiences.ContainsKey(skill))
             {
                 Debug.LogWarning($"SkillExperience component for skill {skill} is missing. Returning default level.");
-                Debug.Log(gameObject.name);
                 return startingLevel;
             }
             SkillExperience skillExperience = GetSkillExperience(skill);
@@ -117,7 +115,6 @@ namespace RPG.Stats
             {
                 float[] XPToLevelUp = skillProgression.GetExperienceToLevel(skill, characterClass);
 
-                Debug.Log(XPToLevelUp[level - 1]);
 
                 if (XPToLevelUp[level -1] > currentXP)
                 {

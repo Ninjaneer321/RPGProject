@@ -11,7 +11,7 @@ namespace RPG.UI
     {
         PlayerConversant playerConversant;
         [SerializeField] AIConversant aiConversant;
-        AudioSource audioSource;
+        [SerializeField] AudioSource audioSource;
 
         [SerializeField] TextMeshProUGUI AIText;
         [SerializeField] Button nextButton;

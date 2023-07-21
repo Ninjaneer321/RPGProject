@@ -120,7 +120,6 @@ namespace RPG.Stats
             {
                 float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level);
 
-                Debug.Log(XPToLevelUp);
                 if (XPToLevelUp > currentXP)
                 {
                     return level;

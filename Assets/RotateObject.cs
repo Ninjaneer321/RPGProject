@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
-
+    [SerializeField] GameObject playerPreviewCamera = null;
     PlayerControls playerControls;
     [SerializeField] float rotationAmount = 1;
     [SerializeField] float rotationSpeed = 5;
@@ -16,6 +16,7 @@ public class RotateObject : MonoBehaviour
 
     private void OnEnable()
     {
+
         if (playerControls == null)
         {
             playerControls = new PlayerControls();
@@ -33,6 +34,7 @@ public class RotateObject : MonoBehaviour
 
     private void Update()
     {
+        if (!playerPreviewCamera.activeInHierarchy) return;
         if (cameraInput > 0)
         {
             targetRotation.y = targetRotation.y + rotationAmount;
@@ -41,6 +43,8 @@ public class RotateObject : MonoBehaviour
         {
             targetRotation.y = targetRotation.y - rotationAmount;
         }
+
+        Debug.Log(cameraInput);
 
         currentRotation = Vector3.Lerp(currentRotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.eulerAngles = currentRotation;

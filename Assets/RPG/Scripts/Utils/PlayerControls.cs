@@ -57,8 +57,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Camera"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""9b953899-ed7c-44a3-b0de-31a6973332d1"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""id"": ""46bfd2e7-101f-4408-90ec-223d10b33331"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -143,37 +143,26 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""5cd54e04-57c7-46c6-8eed-51dee7a960d2"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": ""Hold"",
+                    ""name"": """",
+                    ""id"": ""9d405073-e0e1-482c-8cd0-5cc4a05e7338"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Camera"",
-                    ""isComposite"": true,
+                    ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""Left"",
-                    ""id"": ""2e700c61-05a5-4896-b573-b37372671faf"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""name"": """",
+                    ""id"": ""ecac62d9-d2b1-4a2b-89e8-5120e367abe8"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Invert"",
                     ""groups"": """",
                     ""action"": ""Camera"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Right"",
-                    ""id"": ""547e7eb5-382e-43e0-8e29-3bd460773f7a"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Camera"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
+                    ""isPartOfComposite"": false
                 }
             ]
         },

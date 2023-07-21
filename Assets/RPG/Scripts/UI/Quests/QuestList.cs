@@ -13,6 +13,8 @@ namespace RPG.Quests
     public class QuestList : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
+        [SerializeField] QuestPopupUI questPopupUI = null;
+        [SerializeField] AudioSource questCompleteSound = null;
 
         public event Action onQuestListUpdated;
         public event Action onQuestGained;
@@ -30,6 +32,9 @@ namespace RPG.Quests
             ChatBox chatBox = GameObject.FindGameObjectWithTag("Player").GetComponent<ChatBox>();
             chatBox.UpdateText(newQuestString);
 
+            questPopupUI.gameObject.SetActive(true);
+            questPopupUI.QuestPopupUIAccept(quest.GetTitle());
+
             if (onQuestGained != null)
             {
                 onQuestGained();
@@ -46,8 +51,12 @@ namespace RPG.Quests
         {
             QuestStatus status = GetQuestStatus(quest); //Get hold of our status using GetQuestStatus, and save it as a variable to use
             status.CompleteObjective(objective);
+
             if (status.IsComplete())
             {
+                questPopupUI.gameObject.SetActive(true);
+                questPopupUI.QuestPopupUIComplete(quest.GetTitle());
+                if (questCompleteSound != null) questCompleteSound.Play();
                 GiveReward(quest);
             }
             if (onQuestRemoved != null)
@@ -84,6 +93,8 @@ namespace RPG.Quests
                     if (!objective.usesCondition) continue;
                     if (objective.completionCondition.Check(GetComponents<IPredicateEvaluator>()))
                     {
+                        questPopupUI.gameObject.SetActive(true);
+                        questPopupUI.QuestObjectivePopupUI(objective.description);
                         CompleteObjective(quest, objective.reference);
                     }
                 }

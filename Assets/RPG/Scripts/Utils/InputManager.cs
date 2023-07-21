@@ -35,6 +35,7 @@ public class InputManager : MonoBehaviour
 
     private void DoAutorun(InputAction.CallbackContext obj)
     {
+
         if (!autoRun)
         {
             if (obj.performed)
@@ -92,7 +93,11 @@ public class InputManager : MonoBehaviour
     {
         GameObject otherInventory = GameObject.FindWithTag("OtherInventory");
 
-        animatorController.animator.SetBool("isLooting", otherInventory.GetComponent<ShowHideUI>().isOpened);
+        if (otherInventory != null)
+        {
+            animatorController.animator.SetBool("isLooting", otherInventory.GetComponent<ShowHideUI>().isOpened);
+        }
+
     }
         //animatorcontroller and link up bool from TargetInventoryUI to a new bool on here that triggers an animation to play.
     
@@ -102,6 +107,10 @@ public class InputManager : MonoBehaviour
         verticalInput = movementInput.y;
         horizontalInput = movementInput.x;
 
+        if (Input.GetMouseButton(0) && Input.GetMouseButton(1))
+        {
+            verticalInput = 1f;
+        }
 
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
         animatorController.UpdateAnimatorValues(0, moveAmount);

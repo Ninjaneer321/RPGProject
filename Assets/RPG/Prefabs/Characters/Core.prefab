@@ -965,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580558803476961863, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1585789515704034731, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3909,7 +3909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8437044491380509807, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_Size
-      value: 0.33570442
+      value: 0.3357044
       objectReference: {fileID: 0}
     - target: {fileID: 8437044491380509807, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
       propertyPath: m_Value
@@ -4283,6 +4283,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5172571648709235226, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
   m_PrefabInstance: {fileID: 558837127293929259}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5367014882200384167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5600812114297910668, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
+  m_PrefabInstance: {fileID: 558837127293929259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afddd28af10a580408e90b290a22c5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6102125488723105305 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6011876303128826162, guid: 07dc30b6f1bbb4147acd5fd5555a18f5, type: 3}
@@ -4878,6 +4889,10 @@ PrefabInstance:
       propertyPath: respawnLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9017578639308245356, guid: 2a3db5a610ee3574ea00e44ec9602bae, type: 3}
+      propertyPath: questPopupUI
+      value: 
+      objectReference: {fileID: 5367014882200384167}
     - target: {fileID: 9067784782048837604, guid: 2a3db5a610ee3574ea00e44ec9602bae, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

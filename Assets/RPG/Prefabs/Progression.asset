@@ -48,7 +48,7 @@ MonoBehaviour:
   - characterClass: 1
     stats:
     - stat: 0
-      levels: 340000005000000064000000780000008c000000
+      levels: 370000005000000064000000780000008c000000
     - stat: 1
       levels: 3d0000005100000065000000790000008d000000
     - stat: 3
