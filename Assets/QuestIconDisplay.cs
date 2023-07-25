@@ -75,9 +75,7 @@ public class QuestIconDisplay : MonoBehaviour
             {
                 exclaimationPointGold.SetActive(true);
             }
-            Debug.Log(quest);
         }
-
     }
 
     private void ShowGreyQuestionMark()

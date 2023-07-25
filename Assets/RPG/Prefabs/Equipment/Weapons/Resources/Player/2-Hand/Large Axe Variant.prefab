@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1.0912105, y: 1.0912105, z: 1.0912105}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2331419485025983019}
+  - {fileID: 8562877643913554017}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 75.751, y: -631.334, z: -815.132}
@@ -100,9 +100,9 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1890120307930733132}
-        m_TargetAssemblyTypeName: RandomSoundScript, Assembly-CSharp
-        m_MethodName: PlaySound
+      - m_Target: {fileID: 4722184458673747274}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2331419485025983019}
   - component: {fileID: 4722184458673747274}
-  - component: {fileID: 1890120307930733132}
   m_Layer: 0
   m_Name: Hit Sound
   m_TagString: Untagged
@@ -137,12 +136,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7554865339097642792}
-  m_LocalRotation: {x: -0.8010117, y: -0.2660628, z: 0.071458265, w: 0.5314928}
-  m_LocalPosition: {x: -0.32301554, y: 0.26684475, z: -0.6012479}
-  m_LocalScale: {x: 0.70581245, y: 0.7058124, z: 0.7058124}
+  m_LocalRotation: {x: -0.80101174, y: -0.2660628, z: 0.07145826, w: 0.5314929}
+  m_LocalPosition: {x: -0.32301563, y: 0.26684472, z: -0.60124797}
+  m_LocalScale: {x: 0.7058125, y: 0.70581234, z: 0.70581245}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5831687818282603469}
+  m_Father: {fileID: 8562877643913554017}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &4722184458673747274
@@ -241,22 +240,35 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1890120307930733132
-MonoBehaviour:
+--- !u!1 &7866355562058940536
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7554865339097642792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1b20e89d0f2524fb1671fde48a8a15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound:
-  - {fileID: 8300000, guid: 7af4e089632ef443ba594d7b6052df92, type: 3}
-  - {fileID: 8300000, guid: 5c980fa229d3a4394b8c6a0272a7c368, type: 3}
-  - {fileID: 8300000, guid: 4a6ec6d75f6eb4b65a126a48d11927b9, type: 3}
-  - {fileID: 8300000, guid: d513f190eb4e8475e9449a8ce12bbb8d, type: 3}
-  - {fileID: 8300000, guid: 1ba4e544be05940caaddbd80c9a7bde2, type: 3}
-  - {fileID: 8300000, guid: 0a0fa6d22e58e48b5884bb1614c47d40, type: 3}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8562877643913554017}
+  m_Layer: 0
+  m_Name: Audio Sources
+  m_TagString: SFXSource
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8562877643913554017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866355562058940536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2331419485025983019}
+  m_Father: {fileID: 5831687818282603469}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

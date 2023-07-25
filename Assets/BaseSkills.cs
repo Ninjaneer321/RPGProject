@@ -60,6 +60,11 @@ namespace RPG.Stats
 
             LogDictionary(skillExperiences);
         }
+
+        public CharacterClass GetCharacterClass()
+        {
+            return characterClass;
+        }
         private void LogDictionary(Dictionary<Skill, SkillExperience> dictionary)
         {
             foreach (var pair in dictionary)

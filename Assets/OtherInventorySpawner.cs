@@ -20,8 +20,6 @@ namespace RPG.Inventories
         //NEED TO CALL THIS FROM CHEST PICKUP 
         public void AddItemsToOtherInventory()
         {
-            Debug.Log("ADD ITEMS TO INVENTORY");
-
                 var baseStats = GetComponent<BaseStats>();
                 Inventory otherInventory = GetComponent<Inventory>();
                 foreach (DropLibrary dropLibrary in dropLibraries)

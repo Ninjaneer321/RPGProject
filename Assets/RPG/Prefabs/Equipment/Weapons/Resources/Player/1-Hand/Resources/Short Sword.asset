@@ -21,7 +21,6 @@ MonoBehaviour:
   stackable: 0
   price: 80
   category: 2
-  requiredLevel: 1
   allowedEquipLocation: 5
   equipCondition:
     and: []
@@ -36,5 +35,6 @@ MonoBehaviour:
   weaponRange: 2
   weaponSpeed: 2.1
   projectile: {fileID: 0}
+  weaponSkill: 5
   isTwoHanded: 0
   mainHand: 0

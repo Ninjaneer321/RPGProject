@@ -208,7 +208,7 @@ namespace RPG.Control
                 }
                 else
                 {
-                    Debug.Log("You are too far away from the enemy!");
+                    Debug.Log("You are too far away from the enemy! Create a UI Element for this");
                 }
             }
         }

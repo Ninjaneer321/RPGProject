@@ -2632,6 +2632,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathDelayTime: 10
+  audioSourceObject: {fileID: 7654789348112592178}
 --- !u!114 &5013100822216514153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,7 +3064,7 @@ GameObject:
   - component: {fileID: 7722393583342988188}
   m_Layer: 8
   m_Name: Audio Sources
-  m_TagString: Untagged
+  m_TagString: SFXSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

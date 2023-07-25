@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 1218955483532533652}
   m_Layer: 0
   m_Name: Audio Sources
-  m_TagString: Untagged
+  m_TagString: SFXSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1298,6 +1298,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isAggrevated: 0
+  skillExperienceToReward: 0
   aggrevateEvent:
     m_PersistentCalls:
       m_Calls:

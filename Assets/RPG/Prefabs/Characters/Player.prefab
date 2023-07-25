@@ -1,5 +1,133 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1376546719972007962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7623762145331984328}
+  - component: {fileID: 599819193999078259}
+  m_Layer: 0
+  m_Name: Step Sound (1)
+  m_TagString: IgnoreSFXVolume
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7623762145331984328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376546719972007962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 801334628163809174}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &599819193999078259
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376546719972007962}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 85016e0f2b01da248b9663dd49a161b0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2782487884370214913
 GameObject:
   m_ObjectHideFlags: 0
@@ -69404,7 +69532,7 @@ MonoBehaviour:
   rayCastHeightOffset: 0.465
   isJumping: 0
   spherecastRadius: 0.2
-  movementSpeed: 3.5
+  movementSpeed: 5.5
   rotationSpeed: 15
   gravityIntensity: -15
   jumpHeight: 1.7
@@ -69696,6 +69824,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathDelayTime: 10
+  audioSourceObject: {fileID: 0}
 --- !u!114 &4479129371068590894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69908,6 +70037,27 @@ MonoBehaviour:
   - skill: 3
     experience: 0
     level: 0
+  - skill: 4
+    experience: 0
+    level: 0
+  - skill: 5
+    experience: 0
+    level: 0
+  - skill: 6
+    experience: 0
+    level: 0
+  - skill: 7
+    experience: 0
+    level: 0
+  - skill: 1
+    experience: 0
+    level: 0
+  - skill: 2
+    experience: 0
+    level: 0
+  - skill: 8
+    experience: 0
+    level: 0
   skillExperiencePopupUI: {fileID: 0}
 --- !u!1 &7614045071942486245
 GameObject:
@@ -70024,6 +70174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Close Sound
       objectReference: {fileID: 0}
+    - target: {fileID: 3289376741673752193, guid: 8ad4280b82e1af748abf2c25d216673d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5380930537305256177, guid: 8ad4280b82e1af748abf2c25d216673d, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -70074,80 +70228,6 @@ PrefabInstance:
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7579034172772983190, guid: 8ad4280b82e1af748abf2c25d216673d, type: 3}
   m_PrefabInstance: {fileID: 904502480541740805}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1752994170945511762
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 801334628163809174}
-    m_Modifications:
-    - target: {fileID: 813351752012169544, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_Name
-      value: Step Sound (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_Volume
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 85016e0f2b01da248b9663dd49a161b0, type: 3}
-    - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8187238108154861210, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
---- !u!82 &599819193999078259 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-  m_PrefabInstance: {fileID: 1752994170945511762}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3389656114783371647
 PrefabInstance:
@@ -70606,6 +70686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest Complete Sound
       objectReference: {fileID: 0}
+    - target: {fileID: 3293186104808279195, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6378194433323720883, guid: 54374fa3d52f2584f824f94f764fbf5e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -70667,10 +70751,6 @@ PrefabInstance:
     - target: {fileID: 813351752012169544, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_Name
       value: Step Sound
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
-      propertyPath: m_Volume
-      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1153236549707436577, guid: 22231b41b20e1164b9c3ef2021e4916c, type: 3}
       propertyPath: m_audioClip
@@ -70812,6 +70892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pickup Sound
       objectReference: {fileID: 0}
+    - target: {fileID: 5872448046150604592, guid: 80244310ebda4064694cb5271ff5fe86, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7530157546950748874, guid: 80244310ebda4064694cb5271ff5fe86, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -70874,9 +70958,21 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4488624334384434100, guid: c9cc9c6abcb73904fac4f90acd2cc774, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773129324826886395, guid: c9cc9c6abcb73904fac4f90acd2cc774, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6098709471736040409, guid: c9cc9c6abcb73904fac4f90acd2cc774, type: 3}
       propertyPath: m_Name
       value: Audio Sources
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098709471736040409, guid: c9cc9c6abcb73904fac4f90acd2cc774, type: 3}
+      propertyPath: m_TagString
+      value: SFXSource
       objectReference: {fileID: 0}
     - target: {fileID: 6175215354650348919, guid: c9cc9c6abcb73904fac4f90acd2cc774, type: 3}
       propertyPath: m_RootOrder

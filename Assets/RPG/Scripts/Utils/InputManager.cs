@@ -40,7 +40,6 @@ public class InputManager : MonoBehaviour
         {
             if (obj.performed)
             {
-                Debug.Log("performed");
                 autoRun = true;
                 movementInput = new Vector2(0, 1);
             }
@@ -49,7 +48,6 @@ public class InputManager : MonoBehaviour
         {
             if (obj.performed)
             {
-                Debug.Log("performed with autorun");
                 autoRun = false;
                 movementInput = new Vector2(0, 0);
             }

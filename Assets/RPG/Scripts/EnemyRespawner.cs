@@ -14,7 +14,7 @@ public class EnemyRespawner : MonoBehaviour
     [SerializeField] private GameObject LastEnemy;
 
 
-    void Start()
+    void Awake()
     {
         Timer = Cooldown + 1f;
         Death = false;

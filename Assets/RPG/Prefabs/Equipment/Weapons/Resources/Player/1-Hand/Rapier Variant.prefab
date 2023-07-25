@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1459476692788303286}
   - component: {fileID: 1707168159848234996}
-  - component: {fileID: 1934416094576655551}
   m_Layer: 0
   m_Name: Damage Sound
   m_TagString: Untagged
@@ -25,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4693378647736930383}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9017348781366859593}
+  m_Father: {fileID: 4575398883555795330}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1707168159848234996
@@ -129,25 +128,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1934416094576655551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4693378647736930383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1b20e89d0f2524fb1671fde48a8a15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound:
-  - {fileID: 8300000, guid: ff04afb5221f943d88e12a546f0fd797, type: 3}
-  - {fileID: 8300000, guid: 465ee7a3220894266aa6e267cec0b471, type: 3}
-  - {fileID: 8300000, guid: 8d534bfb62ac14c8d9887999e260b68c, type: 3}
-  - {fileID: 8300000, guid: 02c823e3443b940ae9a1f88057dcfc82, type: 3}
-  - {fileID: 8300000, guid: faaf26698fb984541b6d419da47ad72f, type: 3}
-  - {fileID: 8300000, guid: 39ceb46a85a9942b5817ad73e0c3fc7d, type: 3}
 --- !u!1 &7325985219628493325
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +159,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9017348781366859593}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &7337900308925165081
 MeshFilter:
@@ -249,22 +229,26 @@ PrefabInstance:
     - target: {fileID: -48648012389437865, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1934416094576655551}
+      objectReference: {fileID: 1707168159848234996}
     - target: {fileID: -48648012389437865, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -48648012389437865, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlaySound
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: -48648012389437865, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RandomSoundScript, Assembly-CSharp
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: -48648012389437865, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686300724138838680, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663605579675191871, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
       propertyPath: m_Name
@@ -316,6 +300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
+--- !u!4 &4575398883555795330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1686300724138838680, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}
+  m_PrefabInstance: {fileID: 2889591985856342810}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9017348781366859593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6142323204164959315, guid: c5e5b6f09845ce2458f8a51d96f7f535, type: 3}

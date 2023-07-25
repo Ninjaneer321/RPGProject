@@ -138,8 +138,6 @@ namespace RPG.Combat
             //THIS IS ACTUALLY TAKING MY PLAYER FIGHTER COMPONENT'S SKILLEXPERIENCEREWARD AND NOT THE ENEMIES
 
             SkillExperience skillExperience = GameObject.FindGameObjectWithTag("Player").GetComponent<SkillExperience>();
-            Debug.Log(skillExperienceToReward);
-            Debug.Log(target.GetComponent<Fighter>().skillExperienceToReward);
             skillExperience.GainExperience(currentWeaponConfig.weaponSkill, target.GetComponent<Fighter>().skillExperienceToReward);
 
         }

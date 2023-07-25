@@ -30,7 +30,6 @@ public class OtherInventory : MonoBehaviour, IRaycastable
             GameObject player = GameObject.FindWithTag("Player");
             if (Vector3.Distance(player.transform.position, this.transform.position) <= 2.5f)
             {
-                Debug.Log("Here");
                 GameObject otherInventory = GameObject.FindWithTag("OtherInventory");
                 otherInventory.GetComponent<ShowHideUI>().ShowOtherInventory(gameObject);
                 player.transform.LookAt(this.transform, Vector3.up);
@@ -40,7 +39,6 @@ public class OtherInventory : MonoBehaviour, IRaycastable
                     chestPickupManager.isLooted = true;
                 }
                 //FindObjectOfType<ShowHideUI>().ShowOtherInventory(gameObject);
-                Debug.Log(gameObject.name);
             }
         }
         return true;

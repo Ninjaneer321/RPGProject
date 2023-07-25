@@ -10,7 +10,12 @@ namespace RPG.Stats
         Foraging,
         Crafting,
         Mining,
-        Unarmed
+        Unarmed,
+        Dagger,
+        Sword,
+        Mace,
+        Axe,
+        Staff
     }
 }
 

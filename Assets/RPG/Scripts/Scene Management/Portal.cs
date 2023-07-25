@@ -38,7 +38,6 @@ namespace SceneManagement
         {
             if (Input.GetMouseButtonDown(1))
             {
-                Debug.Log("Click");
                 playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
                 if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 2.5f)
                 {

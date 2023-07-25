@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiConversant: {fileID: 0}
+  audioSource: {fileID: 7147421654949128137}
   AIText: {fileID: 4923673180400917020}
   nextButton: {fileID: 569153647080160381}
   quitButton: {fileID: 7461079764720686031}
@@ -275,7 +276,7 @@ MonoBehaviour:
   AIResponse: {fileID: 8979132816286209381}
   currentSpeaker: {fileID: 1977114371302978119}
   itemInfoText: {fileID: 4923673180400917020}
-  textSpeed: 0.01
+  textSpeed: 0.015
 --- !u!82 &7147421654949128137
 AudioSource:
   m_ObjectHideFlags: 0
@@ -288,7 +289,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc1945dbfb9360c4bb2a370bc19a7c70, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0

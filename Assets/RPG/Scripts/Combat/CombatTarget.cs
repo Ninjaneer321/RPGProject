@@ -20,7 +20,6 @@ namespace RPG.Combat
 
             if (Input.GetMouseButtonDown(1))
             {
-                Debug.Log("Click");
 
 
                 if (playerManager.GetComponent<Fighter>().target != null && playerManager.GetComponent<Fighter>().target.tag == "Enemy")

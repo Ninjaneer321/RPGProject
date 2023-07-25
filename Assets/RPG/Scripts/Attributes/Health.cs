@@ -28,10 +28,13 @@ namespace RPG.Stats
         [SerializeField] TakeDamageEvent takeDamage;
         [SerializeField] TakeHealingEvent takeHealing;
         public UnityEvent onDie;
+        BaseStats baseStats;
 
         [SerializeField] public float deathDelayTime = 10f;
 
-        BaseStats baseStats;
+        [Header("This only applies to enemies.")]
+        [SerializeField] public GameObject audioSourceObject;
+
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -52,18 +55,18 @@ namespace RPG.Stats
 
         private void Start()
         {
-           animator = GetComponent<Animator>();
+            animator = GetComponent<Animator>();
             baseStats = GetComponent<BaseStats>();
             GetInitialHealth();
         }
 
-        //private void Awake()
-        //{
-        //    animator = GetComponent<Animator>();
-        //    baseStats = GetComponent<BaseStats>();
-        //    GetInitialHealth();
+        private void Awake()
+        {
+            //animator = GetComponent<Animator>();
+            //baseStats = GetComponent<BaseStats>();
+            //GetInitialHealth();
 
-        //}
+        }
 
 
         private float GetInitialHealth()
@@ -213,13 +216,12 @@ namespace RPG.Stats
                     gameObject.AddComponent<Pickup>();
                     GetComponent<Mover>().Stop();
                     gameObject.GetComponentInParent<EnemyRespawner>().Death = true;
-
-                    //StartCoroutine(DeathDelay());  
                 }
-                animator.SetBool("dead", true);
-  
+                if (animator != null)
+                {
+                    animator.SetBool("dead", true);
+                }
             }
-            //else animator.SetBool("dead", false);
         }
 
         public void DeathDelayCoroutine()
@@ -228,9 +230,27 @@ namespace RPG.Stats
         }
         public IEnumerator DeathDelay()
         {
+            //Remove AudioSources from Sound Menu Here
             Destroy(GetComponent<Pickup>().lootBeam.gameObject);
+            RemoveAudioSourcesFromSoundMenuList();
             yield return new WaitForSeconds(deathDelayTime);
             Destroy(gameObject);
+        }
+
+        private void RemoveAudioSourcesFromSoundMenuList()
+        {
+            GameObject uiCanvas = GameObject.FindGameObjectWithTag("UICanvas");
+            SFXVolumeControl sfxVolumeControl = uiCanvas.GetComponentInChildren<SFXVolumeControl>();
+
+            Transform audioSourceTransform = audioSourceObject.transform;
+            int childCount = audioSourceTransform.childCount;
+            for (int i = 0; i < childCount; i++)
+            {
+                //MAYBE IN HERE, WE SOMEHOW CHECK IF THE ENEMIES AUDIOSOURCES ARE INSIDE OF THE LIST
+                //AND THEN WE REMOVE THOSE SPECIFIC AUDIOSOURCES FROM THE LIST
+                Transform childAudioSource = audioSourceTransform.GetChild(i);;
+            }
+
         }
 
         public object CaptureState()

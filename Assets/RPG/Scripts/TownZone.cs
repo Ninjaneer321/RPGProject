@@ -27,7 +27,6 @@ public class TownZone : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("test");
             playerUICanvas = other.GetComponentInChildren<PlayerUICanvas>();
             playerUICanvas.zoneCanvas.SetActive(true);
             playerUICanvas.zoneTextMeshPro.text = zoneName;

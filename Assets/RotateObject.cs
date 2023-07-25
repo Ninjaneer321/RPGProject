@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RotateObject : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class RotateObject : MonoBehaviour
     PlayerControls playerControls;
     [SerializeField] float rotationAmount = 1;
     [SerializeField] float rotationSpeed = 5;
+
 
     float cameraInput;
 
@@ -49,4 +51,16 @@ public class RotateObject : MonoBehaviour
         currentRotation = Vector3.Lerp(currentRotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.eulerAngles = currentRotation;
     }
+
+    public void RotateButtonInputA()
+    {
+        targetRotation.y = targetRotation.y + rotationAmount;
+
+    }
+
+    public void RotateButtonInputD()
+    {
+        targetRotation.y = targetRotation.y - rotationAmount;
+    }
+
 }

@@ -1241,6 +1241,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathDelayTime: 10
+  audioSourceObject: {fileID: 4529449414922563280}
 --- !u!114 &1257222034385115531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,6 +1302,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isAggrevated: 0
+  skillExperienceToReward: 0
   aggrevateEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1334,7 +1336,6 @@ MonoBehaviour:
   progression: {fileID: 11400000, guid: 68c6722a6a22ffa4f9d4f071740826ad, type: 2}
   levelUpParticleEffect: {fileID: 0}
   shouldUseModifiers: 1
-  currentLevel: 0
 --- !u!114 &9203434031506415112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1844,7 +1845,7 @@ GameObject:
   - component: {fileID: 4597018983593715838}
   m_Layer: 0
   m_Name: Audio Sources
-  m_TagString: Untagged
+  m_TagString: SFXSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

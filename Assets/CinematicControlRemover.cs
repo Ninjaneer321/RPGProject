@@ -24,7 +24,6 @@ public class CinematicControlRemover : MonoBehaviour
 
     private void EnableControl(PlayableDirector obj)
     {
-        Debug.Log("Open Up Intro Window!");
         player.GetComponent<InputManager>().enabled = true;
     }
 

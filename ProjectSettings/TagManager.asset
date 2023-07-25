@@ -15,6 +15,9 @@ TagManager:
   - PauseMenu
   - OtherInventory
   - ChestPickup
+  - SFXSource
+  - IgnoreSFXVolume
+  - UICanvas
   layers:
   - Default
   - TransparentFX
