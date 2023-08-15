@@ -137,7 +137,7 @@ namespace RPG.Quests
             }
             foreach (var reward in quest.GetRewards())
             {
-               bool success = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
+               bool success = GetComponent<Inventory>().AddToFirstEmptySlotInventory(reward.item, reward.number);
                if (!success)
                {
                     GetComponent<ItemDropper>().DropItem(reward.item, reward.number);

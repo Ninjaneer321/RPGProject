@@ -7,19 +7,36 @@ namespace RPG.Shops
 {
     public class Shopper : MonoBehaviour
     {
-        Shop activeShop = null;
+        Shop activeItemShop = null;
+        AbilityShop activeAbilityShop = null;
 
         public event Action activeShopChange;
         public void SetActiveShop(Shop shop)
         {
-            if (activeShop != null)
+            if (activeItemShop != null)
             {
-                activeShop.SetShopper(null);
+                activeItemShop.SetShopper(null);
             }
-            activeShop = shop;
-            if (activeShop != null)
+            activeItemShop = shop;
+            if (activeItemShop != null)
             {
-                activeShop.SetShopper(this);
+                activeItemShop.SetShopper(this);
+            }
+            if (activeShopChange != null)
+            {
+                activeShopChange();
+            }
+        }
+        public void SetActiveShop(AbilityShop shop)
+        {
+            if (activeAbilityShop != null)
+            {
+                activeAbilityShop.SetShopper(null);
+            }
+            activeAbilityShop = shop;
+            if (activeAbilityShop != null)
+            {
+                activeAbilityShop.SetShopper(this);
             }
             if (activeShopChange != null)
             {
@@ -29,7 +46,12 @@ namespace RPG.Shops
 
         public Shop GetActiveShop()
         {
-            return activeShop;
+            return activeItemShop;
+        }
+
+        public AbilityShop GetActiveAbilityShop()
+        {
+            return activeAbilityShop;
         }
     }
 }

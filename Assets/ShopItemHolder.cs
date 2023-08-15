@@ -11,6 +11,10 @@ namespace RPG.Shops
     public class ShopItemHolder : MonoBehaviour, IItemHolder
 
     {
+        public AbilityItem GetAbility()
+        {
+            return gameObject.GetComponentInParent<AbilityRowUI>().GetShopAbility().GetAbilityItem();
+        }
 
         public InventoryItem GetItem()
 

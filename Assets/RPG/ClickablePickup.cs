@@ -12,6 +12,9 @@ namespace RPG.Control
         Pickup pickup;
         [SerializeField] Skill skillToGainExperienceToward;
         [SerializeField] float experienceToGain;
+
+        [SerializeField] bool isInventoryItemPickup = true;
+        [SerializeField] bool isRecipePickup = false;
         private void Awake()
         {
             pickup = GetComponent<Pickup>();
@@ -47,16 +50,28 @@ namespace RPG.Control
         {
             if (Input.GetMouseButtonDown(1))
             {
-                if (Vector3.Distance(playerManager.transform.position, this.transform.position) <= 2.5f)
+                if (isInventoryItemPickup)
                 {
-                    GameObject player = GameObject.FindWithTag("Player");
-                    player.GetComponent<Animator>().SetTrigger("gatherAction");
-                    player.GetComponent<InputManager>().lootAudioOpen.Play();
-                    player.transform.LookAt(this.transform, Vector3.up);
-                    player.GetComponent<SkillExperience>().GainExperience(skillToGainExperienceToward, experienceToGain);
-                    pickup.PickupItem();
+                    if (Vector3.Distance(playerManager.transform.position, this.transform.position) <= 2.5f)
+                    {
+                        GameObject player = GameObject.FindWithTag("Player");
+                        player.GetComponent<Animator>().SetTrigger("gatherAction");
+                        player.GetComponent<InputManager>().lootAudioOpen.Play();
+                        player.transform.LookAt(this.transform, Vector3.up);
+                        player.GetComponent<SkillExperience>().GainExperience(skillToGainExperienceToward, experienceToGain);
+                        pickup.PickupItem();
 
+                    }
                 }
+                if (isRecipePickup)
+                {
+                    if (Vector3.Distance(playerManager.transform.position, this.transform.position) <= 2.5f)
+                    {
+                        pickup.PickupItem();
+
+                    }
+                }
+
 
             }
             return true;

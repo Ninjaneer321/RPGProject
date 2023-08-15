@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 0480c19d-2d98-45b2-99f4-23d78d1cf946
   displayName: Axe
   description: "One-Hand Axe            \n7-11 Damage / Speed 2.50\n(3.60 damage
-    per second)\nRequires Level 2"
+    per second)\nRequires Level 1"
   icon: {fileID: 21300000, guid: 43f79c86c1dc2994abac4e3d886669d0, type: 3}
   pickup: {fileID: 160915439029886631, guid: e818fc9d1eed47f448f1bd7be17a1694, type: 3}
   stackable: 0

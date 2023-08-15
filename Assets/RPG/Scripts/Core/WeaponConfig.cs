@@ -10,7 +10,7 @@ namespace RPG.Core
     [CreateAssetMenu(fileName = "Weapon", menuName = "Equipment/Weapon/Make New Weapon", order = 0)]
     public class WeaponConfig : StatsEquipableItem, iModifierProvider
     {
-        [SerializeField] AnimatorOverrideController animatorOverride = null;
+        [SerializeField] public AnimatorOverrideController animatorOverride = null;
         [SerializeField] Weapon weaponPrefab = null;
         [SerializeField] Weapon weaponPrefab2 = null;
         [Header("Add +Damage Stat and +1 to Top and Bottom except Unarmed")]
@@ -96,10 +96,6 @@ namespace RPG.Core
                         weapon2 = Instantiate(weaponPrefab2, leftHand);
                         weapon2.gameObject.name = weaponName2;
                     }
-                }
-                if (animator.runtimeAnimatorController != null)
-                {
-                    animator.runtimeAnimatorController = animatorOverride;
                 }
             }
             return weapon;

@@ -15,12 +15,12 @@ MonoBehaviour:
   itemID: 05e39b7c-1a96-47eb-b166-4897b10bc6ff
   displayName: Mace
   description: "One-Hand Mace     \n11-16 Damage / Speed 2.80\n(4.82 damage per second)\nRequires
-    Level 2"
+    Level 1"
   icon: {fileID: 21300000, guid: f15d43b02a2a2b3429ec483a015b25de, type: 3}
   pickup: {fileID: 0}
   stackable: 0
   price: 180
-  category: 0
+  category: 2
   allowedEquipLocation: 5
   equipCondition:
     and: []

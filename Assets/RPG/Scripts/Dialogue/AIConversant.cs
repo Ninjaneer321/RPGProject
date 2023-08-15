@@ -18,7 +18,7 @@ namespace RPG.Dialogue
         public CursorType GetCursorType()
         {
             PlayerManager playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
-            if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 2.5f)
+            if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 4.5f)
             {
                 return CursorType.Dialogue;
             }
@@ -40,7 +40,7 @@ namespace RPG.Dialogue
             if (Input.GetMouseButtonDown(1))
             {
                 playerManager.GetComponent<Fighter>().target = gameObject.GetComponent<Health>();
-                if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 2.5f)
+                if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 4.5f)
                 {
                     playerManager.GetComponent<PlayerConversant>().StartDialogue(this, newDialogue);
                 }

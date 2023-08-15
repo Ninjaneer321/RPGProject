@@ -32,7 +32,7 @@ namespace RPG.Control
         public bool isDraggingUI;
         public bool isCastingAbility;
 
-
+        [SerializeField] AnimatorOverrideController baseAnimator;
         [SerializeField] public bool isSheathed;
         [SerializeField] private bool isWalking;
         [SerializeField] private bool canLoot;
@@ -136,6 +136,7 @@ namespace RPG.Control
         private void LateUpdate()
         {
             playerLocomotion.isJumping = animator.GetBool("isJumping");
+
 
         }
 
@@ -261,9 +262,12 @@ namespace RPG.Control
             {
                 if (attack.triggered)
                 {
-
+                    fighter.isInCombat = true;
                     isAttacking = true;
-
+                    if (isAttacking)
+                    {
+                        animator.runtimeAnimatorController = fighter.currentWeaponConfig.animatorOverride;
+                    }
                     if (fighter.currentWeaponConfig.HasProjectile()) return;
 
                 }
@@ -275,8 +279,12 @@ namespace RPG.Control
 
                 if (attack.triggered)
                 {
+                    fighter.isInCombat = false;
                     isAttacking = false;
-
+                    if (!isAttacking)
+                    {
+                        animator.runtimeAnimatorController = baseAnimator;
+                    }
                     if (fighter.currentWeaponConfig.HasProjectile()) return;
                 }
             }
@@ -405,6 +413,7 @@ namespace RPG.Control
                     {
                         fighter.target.GetComponent<AIController>().Deselected();
                     }
+                    fighter.isInCombat = false;
                     fighter.Cancel();
                     tabTargetList.Clear();
                     targetIndex = 0;

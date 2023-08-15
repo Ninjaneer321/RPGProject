@@ -8,13 +8,19 @@ public class HelperUIBorderAnimation : MonoBehaviour
 {
     [SerializeField] CanvasGroup helperUICanvasGroup = null;
     Coroutine currentActiveFade = null;
+    [SerializeField] Scrollbar scrollBar = null;
+    [SerializeField] GameObject quitButton = null;
 
     private void OnEnable()
     {
-        Debug.Log("OnEnable");
+        quitButton.SetActive(false);
         StartCoroutine(HelperUIBorderCoroutine());
     }
 
+    private void Update()
+    {
+        if (scrollBar.value <= 0.5) quitButton.SetActive(true);
+    }
     private IEnumerator HelperUIBorderCoroutine()
     {
         FadeOutImmediate();

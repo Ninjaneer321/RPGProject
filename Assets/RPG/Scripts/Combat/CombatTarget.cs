@@ -33,6 +33,7 @@ namespace RPG.Combat
                 {
                     playerManager.GetComponent<Fighter>().target.GetComponent<AIController>().Selected();
                 }
+                playerManager.GetComponent<Fighter>().isInCombat = true;
                 playerManager.isAttacking = true;
                 //playerManager.GetComponent<Fighter>().HitTestServerRpc();
                 playerManager.AttackTestMethod();

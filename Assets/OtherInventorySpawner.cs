@@ -38,7 +38,7 @@ namespace RPG.Inventories
                             }
                         }
 
-                        bool foundSlot = otherInventory.AddToFirstEmptySlot(drop.item, drop.number);
+                        bool foundSlot = otherInventory.AddToFirstEmptySlotInventory(drop.item, drop.number);
 
                         if (!foundSlot)
                         {

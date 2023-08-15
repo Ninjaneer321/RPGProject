@@ -13,17 +13,28 @@ public class CraftingUI : MonoBehaviour
     [SerializeField] GameObject recipeArrow = null;
     [SerializeField] Button craftButton = null;
 
-    CraftingRecipe craftingRecipe;
+    [SerializeField] CraftingRecipeBank craftingRecipeBank;
     Inventory inventory;
 
     private void Awake()
     {
         inventory = Inventory.GetPlayerInventory();
+        craftingRecipeBank = Resources.Load<CraftingRecipeBank>("");
     }
 
-    public void SetupCraftingRecipes(CraftingRecipe recipe)
+    public CraftingRecipeBank GetCraftingRecipeBank()
     {
-        craftingRecipe = recipe;
+        return craftingRecipeBank;
+    }
+    //THIS METHOD IS THE ONE THAT I COULD MAYBE USE TO ADD RECIPES TO MY CRAFTING
+    public void SetupCraftingRecipes(CraftingRecipeBank recipe)
+    {
+        craftingRecipeBank = recipe;
+        Redraw();
+    }
+
+    private void OnEnable()
+    {
         Redraw();
     }
 
@@ -31,7 +42,7 @@ public class CraftingUI : MonoBehaviour
     {
         DestroyChild(transform);
 
-        for (int i = 0; i < craftingRecipe.GetCraftingRecipes().Length; i++)
+        for (int i = 0; i < craftingRecipeBank.GetCraftingRecipes().Length; i++)
         {
             // Create a recipe holder gameobject in under the current transform.
             var recipeHolder = Instantiate(recipePrefab, transform);
@@ -39,18 +50,18 @@ public class CraftingUI : MonoBehaviour
             DestroyChild(recipeHolder.transform);
 
             // Assign the current recipe iteration to a new variable.
-            var recipe = craftingRecipe.GetCraftingRecipes()[i];
+            var recipe = craftingRecipeBank.GetCraftingRecipes()[i];
 
             // Create and setup recipe ingredient gameobject elements under the recipe holder gameobject transform.
             CreateRecipeIngredients(recipe, recipeHolder.transform);
 
             // Create and setup recipe objects. Arrow image, recipe result item and craft button.
-            CreateRecipeObjects(craftingRecipe.GetCraftingRecipes()[i].item, recipeHolder.transform, recipe);
+            CreateRecipeObjects(craftingRecipeBank.GetCraftingRecipes()[i].item, recipeHolder.transform, recipe);
 
         }
     }
 
-    private void CreateRecipeIngredients(CraftingRecipe.Recipes recipe, Transform recipeHolder)
+    private void CreateRecipeIngredients(CollectableRecipe recipe, Transform recipeHolder)
     {
         // Store recipe ingredients length in a variable.
         int ingredientsSize = recipe.ingredients.Length;
@@ -65,7 +76,22 @@ public class CraftingUI : MonoBehaviour
         }
     }
 
-    private void CreateRecipeObjects(InventoryItem inventoryItem, Transform recipeHolder, CraftingRecipe.Recipes recipe)
+    //private void CreateRecipeIngredients(CraftingRecipeBank.Recipes recipe, Transform recipeHolder)
+    //{
+    //    // Store recipe ingredients length in a variable.
+    //    int ingredientsSize = recipe.ingredients.Length;
+    //    // Loop through all of the ingredients in the recipe.
+    //    for (int ingredient = 0; ingredient < ingredientsSize; ingredient++)
+    //    {
+    //        // Create the itemSlot prefab and make it a child under the recipeHolder transform.
+    //        var ingredientItem = Instantiate(itemSlot, recipeHolder);
+
+    //        // Set up the item’s (ingredientItem) icon and number amount.
+    //        ingredientItem.Setup(recipe.ingredients[ingredient].item, recipe.ingredients[ingredient].number);
+    //    }
+    //}
+
+    private void CreateRecipeObjects(InventoryItem inventoryItem, Transform recipeHolder, CollectableRecipe recipe)
     {
         // Create the arrow image UI element and make it a child under the recipeHolder transform.
         var arrow = Instantiate(recipeArrow, recipeHolder);

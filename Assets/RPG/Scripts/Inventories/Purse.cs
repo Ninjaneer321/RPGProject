@@ -45,7 +45,7 @@ namespace RPG.Inventories
 
         }
 
-        public int AddItems(InventoryItem item, int number)
+        public int AddInventoryItems(InventoryItem item, int number)
         {
 
                 if (item is CurrencyItem)
@@ -57,6 +57,12 @@ namespace RPG.Inventories
                     return number;
                 }
                 return 0;
+        }
+
+        public int AddAbilityItems(AbilityItem ability, int number)
+        {
+            Debug.Log("Purchased Ability Items");
+            throw new NotImplementedException();
         }
     }
 }

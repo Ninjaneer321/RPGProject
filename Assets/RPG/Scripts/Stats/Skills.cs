@@ -8,7 +8,6 @@ namespace RPG.Stats
     public enum Skill
     {
         Foraging,
-        Crafting,
         Mining,
         Unarmed,
         Dagger,

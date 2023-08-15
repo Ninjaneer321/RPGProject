@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAbilityPopulate : MonoBehaviour
 {
-    [SerializeField] ActionItem[] abilities;
+    [SerializeField] ActionInventoryItem[] abilities;
 
     ActionStore actionStore;
     // Start is called before the first frame update

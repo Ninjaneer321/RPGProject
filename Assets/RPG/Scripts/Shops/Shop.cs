@@ -368,7 +368,7 @@ namespace RPG.Shops
         {
             if (shopperPurse.GetBalance() < price) return;
 
-            bool success = shopperInventory.AddToFirstEmptySlot(item, 1);
+            bool success = shopperInventory.AddToFirstEmptySlotInventory(item, 1);
             if (success)
             {
                 AddToTransaction(item, -1);

@@ -10,17 +10,17 @@ using UnityEngine.UI;
 
 namespace RPG.UI.Shops
 {
-    public class ShopUI : MonoBehaviour, IItemHolder
+    public class AbilityShopUI : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI shopName;
         [SerializeField] Transform listRoot;
-        [SerializeField] RowUI rowPrefab;
+        [SerializeField] AbilityRowUI rowPrefab;
         [SerializeField] TextMeshProUGUI basketTotal;
         [SerializeField] Button confirmButton;
         [SerializeField] Button switchButton;
 
         Shopper shopper = null;
-        Shop currentShop = null;
+        AbilityShop currentShop = null;
 
         Color originalTotalTextColor;
         // Start is called before the first frame update
@@ -45,12 +45,12 @@ namespace RPG.UI.Shops
                 currentShop.onChange -= RefreshUI;
             }
 
-            currentShop = shopper.GetActiveShop();
+            currentShop = shopper.GetActiveAbilityShop();
             gameObject.SetActive(currentShop != null); //currentShop not equalling null is the condition for this object to be active
 
             foreach (FilterButtonUI buttons in GetComponentsInChildren<FilterButtonUI>())
             {
-                buttons.SetShop(currentShop);
+                buttons.SetAbilityShop(currentShop);
             }
             if (currentShop == null) return;
             shopName.text = currentShop.GetShopName();
@@ -67,10 +67,10 @@ namespace RPG.UI.Shops
                 Destroy(child.gameObject);
             }
 
-            foreach (ShopItem item in currentShop.GetFilteredItems())
+            foreach (ShopAbility ability in currentShop.GetFilteredAbilities())
             {
-                RowUI row = Instantiate<RowUI>(rowPrefab, listRoot);
-                row.Setup(currentShop, item);
+                AbilityRowUI row = Instantiate(rowPrefab, listRoot);
+                row.Setup(currentShop, ability);
             }
 
             basketTotal.text = "Total: " + currentShop.TransactionTotal();
@@ -91,13 +91,13 @@ namespace RPG.UI.Shops
             }
             foreach (FilterButtonUI buttons in GetComponentsInChildren<FilterButtonUI>())
             {
-                buttons.RefreshItemUI();
+                buttons.RefreshAbilityUI();
             }
         }
 
-        public void CloseItemShop()
+        public void CloseAbilityShop()
         {
-            shopper.SetActiveShop((Shop)null);
+            shopper.SetActiveShop((AbilityShop)null);
         }
 
         public void ConfirmTransaction()
@@ -110,14 +110,12 @@ namespace RPG.UI.Shops
             currentShop.SelectMode(!currentShop.IsBuyingMode()); //inverts the mode when selecting (Buying -> Selling; Selling -> Buying)
         }
 
-        public InventoryItem GetItem()
-        {
-            return rowPrefab.GetItem();
-        }
+        //REENABLE THIS SCRIPT WHEN ABILITYROWUI IS FILLED OUT
 
         public AbilityItem GetAbility()
         {
-            throw new NotImplementedException();
+            return rowPrefab.GetAbility();
         }
     }
 }
+

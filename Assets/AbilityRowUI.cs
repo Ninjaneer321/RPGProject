@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace RPG.UI.Shops
 {
-    public class RowUI : MonoBehaviour, IItemHolder
+    public class AbilityRowUI : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI nameField;
 
@@ -22,45 +22,47 @@ namespace RPG.UI.Shops
         [SerializeField] TextMeshProUGUI priceField;
         [SerializeField] TextMeshProUGUI quantityField;
 
-        Shop currentShop = null;
-        ShopItem item = null;
+        AbilityShop currentShop = null;
+        ShopAbility ability = null;
 
         //We need to use a serialized field to get hold of the TextMeshPro component of the quantity 
         //field to populate it.
-        public void Setup(Shop currentShop, ShopItem item)
+        public void Setup(AbilityShop currentShop, ShopAbility ability)
         {
             this.currentShop = currentShop;
-            this.item = item;
-            iconField.sprite = item.GetIcon();
-            nameField.text = item.GetName();
-            availabilityField.text = $"{item.GetAvailability()}"; //item.GetAvailability();
-            priceField.text =  $"{item.GetPrice()}";
-            quantityField.text = $"{item.GetQuantityInTransaction()}";  //we need to do this weird shit around the integer to make it readable 
+            this.ability = ability;
+            iconField.sprite = ability.GetIcon();
+            nameField.text = ability.GetName();
+            availabilityField.text = $"{ability.GetAvailability()}"; //item.GetAvailability();
+            priceField.text = $"{ability.GetPrice()}";
+            quantityField.text = $"{ability.GetQuantityInTransaction()}";  //we need to do this weird shit around the integer to make it readable 
                                                                         //by .text components. remember typing this when making different UI. 
         }
 
         public void Add()
         {
-            currentShop.AddToTransaction(item.GetInventoryItem(), 1);
+            currentShop.AddToTransaction(ability.GetAbilityItem(), 1);
         }
 
         public void Remove()
         {
-            currentShop.AddToTransaction(item.GetInventoryItem(), -1);
+            currentShop.AddToTransaction(ability.GetAbilityItem(), -1);
         }
 
         public InventoryItem GetItem()
         {
-            return item.GetInventoryItem();
+            throw new NotImplementedException();
+
         }
-        public ShopItem GetShopItem()
+        public ShopAbility GetShopAbility()
         {
-            return item;
+            return ability;
         }
 
         public AbilityItem GetAbility()
         {
-            throw new NotImplementedException();
+            return ability.GetAbilityItem();
         }
     }
 }
+

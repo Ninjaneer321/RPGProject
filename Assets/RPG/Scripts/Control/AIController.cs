@@ -159,6 +159,7 @@ namespace RPG.Control
             Vector3 nextPosition = guardPosition.value;
             mover.Walk();
             fighter.isAggrevated = false;
+
             if (patrolPath != null)
             {
                 if (AtWaypoint())
@@ -181,6 +182,7 @@ namespace RPG.Control
             timeSinceLastSawPlayer = 0;
             AbilityBehavior();
             fighter.Attack(player);
+            fighter.GetTarget().GetComponent<Fighter>().isInCombat = true;
         }
 
         private void AbilityBehavior()

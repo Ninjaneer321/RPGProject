@@ -33,7 +33,7 @@ MonoBehaviour:
   equipCondition:
     and: []
   additiveModifiers:
-  - stat: 12
+  - stat: 11
     value: 1
   percentageModifiers: []
   animatorOverride: {fileID: 22100000, guid: 8d04155c9b3602549b49964fab044088, type: 2}

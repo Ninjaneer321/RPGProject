@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class ShowCraftingUI : MonoBehaviour
 {
-    [SerializeField] CraftingRecipe craftingRecipe = null;
+    [SerializeField] CraftingRecipeBank craftingRecipe = null;
     [SerializeField] CraftingUI craftingItems = null;
-    [SerializeField] GameObject craftingUI = null;
 
 
     private void Awake()
@@ -16,9 +15,6 @@ public class ShowCraftingUI : MonoBehaviour
 
     private void Start()
     {
-
-        //craftingUI.SetActive(true);
-
         craftingItems.SetupCraftingRecipes(craftingRecipe);
     }
 

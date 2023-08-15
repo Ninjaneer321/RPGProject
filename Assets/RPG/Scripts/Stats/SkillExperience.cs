@@ -14,6 +14,7 @@ public class SkillExperience : MonoBehaviour, ISaveable
         public Skill skill;
         public float experience;
         public int level = 1;
+        public float experienceGainedTowardsNextLevel = 0;
     }
 
     [SerializeField] private BaseSkills baseSkills = null;
@@ -27,8 +28,11 @@ public class SkillExperience : MonoBehaviour, ISaveable
     public int GainLevel(Skill skill)
     {
         SkillExperienceData skillData = GetSkillData(skill);
+        skillData.experienceGainedTowardsNextLevel = 0; //0 + SkillRowUI Row 61
+        Debug.Log("This needs to be 0 plus any excess experience gained.");
         return skillData.level += 1;
     }
+
     public int GetLevel(Skill skill)
     {
         SkillExperienceData skillData = GetSkillData(skill);
@@ -39,7 +43,17 @@ public class SkillExperience : MonoBehaviour, ISaveable
         SkillExperienceData skillData = GetSkillData(skill);
         return skillData != null ? skillData.experience : 0f;
     }
-
+    public float GetExperienceTowardsNextLevel(Skill skill)
+    {
+        SkillExperienceData skillData = GetSkillData(skill);
+        return skillData != null ? skillData.experienceGainedTowardsNextLevel : 0f;
+    }
+    public float SetExcessExperienceGainedTowardsNextLevel(float excessExperience, Skill skill)
+    {
+        SkillExperienceData skillData = GetSkillData(skill);
+        skillData.experienceGainedTowardsNextLevel += excessExperience;
+        return skillData != null ? skillData.experienceGainedTowardsNextLevel : 0f;
+    }
     public List<Skill>? GetSkills()
     {
         List<Skill> skills = new List<Skill>();
@@ -63,6 +77,7 @@ public class SkillExperience : MonoBehaviour, ISaveable
     {
         SkillExperienceData skillData = GetOrCreateSkillData(skill);
         skillData.experience += experience;
+        skillData.experienceGainedTowardsNextLevel += experience;
         skillExperiencePopupUI.SetExperiencePopup(experience.ToString(), skill);
         skillExperiencePopupUI.gameObject.SetActive(true);
         onSkillExperienceGained?.Invoke(skill);

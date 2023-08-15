@@ -213,6 +213,7 @@ namespace RPG.Stats
                 Destroy(gameObject.GetComponent<CombatTarget>());
                 if (gameObject.tag == "Enemy")
                 {
+                    gameObject.GetComponent<Fighter>().GetTarget().GetComponent<Fighter>().isInCombat = false;
                     gameObject.AddComponent<Pickup>();
                     GetComponent<Mover>().Stop();
                     gameObject.GetComponentInParent<EnemyRespawner>().Death = true;

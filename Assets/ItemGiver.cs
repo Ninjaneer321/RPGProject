@@ -12,7 +12,7 @@ namespace RPG.Quests
         public void GiveItem()
         {
             //Inventory playerInventory = GameObject.FindWithTag("Player").GetComponent<Inventory>().AddToFirstEmptySlot(item, 1);
-            bool success = GameObject.FindWithTag("Player").GetComponent<Inventory>().AddToFirstEmptySlot(item, 1);
+            bool success = GameObject.FindWithTag("Player").GetComponent<Inventory>().AddToFirstEmptySlotInventory(item, 1);
             if (!success)
             {
                 GetComponent<ItemDropper>().DropItem(item);

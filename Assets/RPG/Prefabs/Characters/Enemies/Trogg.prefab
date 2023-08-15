@@ -1238,6 +1238,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   deathDelayTime: 2
+  audioSourceObject: {fileID: 0}
 --- !u!114 &4491198383855087201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,6 +1299,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   isAggrevated: 0
+  isInCombat: 0
   skillExperienceToReward: 0
   aggrevateEvent:
     m_PersistentCalls:

@@ -24,4 +24,9 @@ public class CraftingSlotUI: MonoBehaviour, IItemHolder
         // Return the set value in the item variable for the tooltip system
         return item;
     }
+
+    public AbilityItem GetAbility()
+    {
+        throw new System.NotImplementedException();
+    }
 }

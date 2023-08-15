@@ -45,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2140780369154177373, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2357311638213000033, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
       propertyPath: m_SizeDelta.x
@@ -126,6 +126,14 @@ PrefabInstance:
     - target: {fileID: 6736173425764543518, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6871123587410339793, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2452059751842932820}
+    - target: {fileID: 6871123587410339793, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseItemShop
       objectReference: {fileID: 0}
     - target: {fileID: 7235745313420802223, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
       propertyPath: switchButton
@@ -275,6 +283,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   category: 4
+--- !u!114 &2452059751842932820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7235745313420802223, guid: 3444d1e195078c845aeb854263497ab7, type: 3}
+  m_PrefabInstance: {fileID: 5074993129728610555}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0515af1f1c4fd774faffa18f7acf198e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3868530259952253666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8341291696139020825, guid: 3444d1e195078c845aeb854263497ab7, type: 3}

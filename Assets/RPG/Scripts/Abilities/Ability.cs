@@ -13,7 +13,7 @@ using UnityEngine.Events;
 namespace RPG.Abilities
 {
     [CreateAssetMenu(fileName = "Ability", menuName = "Abilities/Make New Ability", order = 0)]
-    public class Ability : ActionItem
+    public class Ability : ActionInventoryItem
     {
         [SerializeField] TargetingStrategy targetingStrategy;
         [SerializeField] FilterStrategy[] filterStrategies;
@@ -52,7 +52,7 @@ namespace RPG.Abilities
         {
             BaseStats stats = user.GetComponent<BaseStats>();
             int playerLevel = stats.GetLevel();
-            ActionItem item = this;
+            ActionInventoryItem item = this;
 
             if (!item.CanUseAbility(user.GetComponent<TraitStore>()))
             {
@@ -80,7 +80,7 @@ namespace RPG.Abilities
                 return;
             }
             CooldownStore cooldownStore = user.GetComponent<CooldownStore>();
-            if (cooldownStore.GetTimeRemaining(this) > 0)
+            if (cooldownStore.GetTimeRemainingInventoryItem(this) > 0)
             {
                 return;
             }
@@ -155,7 +155,7 @@ namespace RPG.Abilities
             Mana mana = data.GetUser().GetComponent<Mana>();
             if (!mana.UseMana(manaCost)) return;
             CooldownStore cooldownStore = data.GetUser().GetComponent<CooldownStore>();
-            cooldownStore.StartCooldown(this, cooldownTime);
+            cooldownStore.StartCooldownInventoryItem(this, cooldownTime);
             foreach (var filterStrategy in filterStrategies)
             {
                 data.SetTargets(filterStrategy.Filter(data.GetTargets()));
@@ -177,7 +177,7 @@ namespace RPG.Abilities
             BaseStats stats = enemy.GetComponent<BaseStats>();
             int enemyLevel = stats.GetLevel();
             AbilityData data = new AbilityData(enemy);
-            ActionItem item = this;
+            ActionInventoryItem item = this;
 
 
             if (!item.EnemyCanUseAbility(enemy.GetComponent<ActionStore>()))
@@ -202,7 +202,7 @@ namespace RPG.Abilities
                 }
             }
             CooldownStore cooldownStore = enemy.GetComponent<CooldownStore>();
-            if (cooldownStore.GetTimeRemaining(this) > 0)
+            if (cooldownStore.GetTimeRemainingInventoryItem(this) > 0)
             {
                 return;
             }
@@ -214,7 +214,7 @@ namespace RPG.Abilities
         private void EnemyTargetAcquired(AbilityData data)
         {
             CooldownStore cooldownStore = data.GetUser().GetComponent<CooldownStore>();
-            cooldownStore.StartCooldown(this, cooldownTime);
+            cooldownStore.StartCooldownInventoryItem(this, cooldownTime);
             foreach (var filterStrategy in filterStrategies)
             {
                 data.SetTargets(filterStrategy.Filter(data.GetTargets()));
@@ -227,7 +227,7 @@ namespace RPG.Abilities
 
         }
 
-        private void EffectFinished()
+       private void EffectFinished()
         {
             Debug.Log("Effect Finished!");
         }

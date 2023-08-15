@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Utils;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Stats
 {
@@ -12,13 +13,9 @@ namespace RPG.Stats
         [SerializeField] int startingLevel = 1;
         [SerializeField] CharacterClass characterClass;
         [SerializeField] SkillProgression skillProgression = null;
-
-
         public event Action<Skill> onSkillLevelUp;
-
         private Dictionary<Skill, SkillExperience> skillExperiences;
-        [SerializeField] LazyValue<int> currentLevel;
-
+        [SerializeField] LazyValue<int> currentLevel;     
         private void OnEnable()
         {
             foreach (var skillExperience in skillExperiences.Values)
@@ -86,6 +83,7 @@ namespace RPG.Stats
             {
                 currentLevel.value = newLevel;
                 skillExperience.GainLevel(skill);
+                //Set Experience Needed for Next Level in Skill Row UI
                 print("Levelled Up!");
                 //LevelUpEffect();
                 onSkillLevelUp?.Invoke(skill); // Invoke the event passing the skill

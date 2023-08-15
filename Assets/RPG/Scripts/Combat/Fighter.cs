@@ -38,7 +38,7 @@ namespace RPG.Combat
         [SerializeField] public HitEvent hitEvent;
 
         [SerializeField] public bool isAggrevated = false;
-
+        [SerializeField] public bool isInCombat = false;
 
         [SerializeField] public float skillExperienceToReward;
 

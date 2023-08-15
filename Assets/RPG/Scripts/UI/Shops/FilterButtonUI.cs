@@ -13,7 +13,9 @@ namespace RPG.UI.Shops
         [SerializeField] ItemCategory category = ItemCategory.None;
 
         Button button;
-        Shop currentShop;
+        Shop currentItemShop;
+        AbilityShop currentAbilityShop;
+ 
 
         private void Awake()
         {
@@ -23,16 +25,26 @@ namespace RPG.UI.Shops
 
         public void SetShop(Shop currentShop)
         {
-            this.currentShop = currentShop;
+            this.currentItemShop = currentShop;
         }
 
-        public void RefreshUI()
+        public void SetAbilityShop(AbilityShop currentShop)
         {
-            button.interactable = (currentShop.GetFilter() != category);
+            this.currentAbilityShop = currentShop;
+        }
+
+        public void RefreshItemUI()
+        {
+            button.interactable = (currentItemShop.GetFilter() != category);
+        }
+
+        public void RefreshAbilityUI()
+        {
+            button.interactable = (currentAbilityShop.GetFilter() != category);
         }
         private void SelectFilter()
         {
-            currentShop.SelectFilter(category);
+            currentItemShop.SelectFilter(category);
         }
     }
 }

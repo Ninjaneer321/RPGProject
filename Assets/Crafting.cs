@@ -5,20 +5,29 @@ using UnityEngine;
 
 public class Crafting : Inventory
 {
-    public void CraftItem(Inventory inventory, InventoryItem inventoryItem, CraftingRecipe.Recipes recipe)
+    //public void CraftItem(Inventory inventory, InventoryItem inventoryItem, CraftingRecipeBank.Recipes recipe)
+    //{
+    //    if (HasIngredients(inventory, recipe))
+    //    {
+    //        RemoveItems(inventory, recipe);
+    //        inventory.AddToFirstEmptySlot(inventoryItem, 1);
+    //    }
+    //}
+
+    public void CraftItem(Inventory inventory, InventoryItem inventoryItem, CollectableRecipe recipe)
     {
         if (HasIngredients(inventory, recipe))
         {
             RemoveItems(inventory, recipe);
-            inventory.AddToFirstEmptySlot(inventoryItem, 1);
+            inventory.AddToFirstEmptySlotInventory(inventoryItem, 1);
         }
     }
-    private bool HasIngredients(Inventory inventory, CraftingRecipe.Recipes recipe)
+    private bool HasIngredients(Inventory inventory, CollectableRecipe recipe)
     {
         // Create boolean to store result.
         bool hasItem = false;
         // Iterate through all of the ingredients in the specified recipe in the parameter.
-        foreach (CraftingRecipe.Ingredients ingredient in recipe.ingredients)
+        foreach (CraftingRecipeBank.Ingredients ingredient in recipe.ingredients) //recipe.ingredients
         {
 
             Debug.Log(ingredient.item + " " + ingredient.number);
@@ -45,10 +54,10 @@ public class Crafting : Inventory
         return true;
     }
 
-    private void RemoveItems(Inventory inventory, CraftingRecipe.Recipes recipe)
+    private void RemoveItems(Inventory inventory, CollectableRecipe recipe)
     {
         //Iterate through all of the ingredients in the specified recipe in the parameter.
-        foreach (CraftingRecipe.Ingredients ingredient in recipe.ingredients)
+        foreach (CraftingRecipeBank.Ingredients ingredient in recipe.ingredients)
         {
             //Check if the current ingredient interation item is stackable.
             if (ingredient.item.IsStackable())
