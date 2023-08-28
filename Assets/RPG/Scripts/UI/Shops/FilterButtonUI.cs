@@ -14,8 +14,7 @@ namespace RPG.UI.Shops
 
         Button button;
         Shop currentItemShop;
-        AbilityShop currentAbilityShop;
- 
+
 
         private void Awake()
         {
@@ -28,20 +27,12 @@ namespace RPG.UI.Shops
             this.currentItemShop = currentShop;
         }
 
-        public void SetAbilityShop(AbilityShop currentShop)
-        {
-            this.currentAbilityShop = currentShop;
-        }
 
         public void RefreshItemUI()
         {
             button.interactable = (currentItemShop.GetFilter() != category);
         }
 
-        public void RefreshAbilityUI()
-        {
-            button.interactable = (currentAbilityShop.GetFilter() != category);
-        }
         private void SelectFilter()
         {
             currentItemShop.SelectFilter(category);

@@ -61,7 +61,7 @@ public class CraftingUI : MonoBehaviour
         }
     }
 
-    private void CreateRecipeIngredients(CollectableRecipe recipe, Transform recipeHolder)
+    private void CreateRecipeIngredients(CraftingRecipe recipe, Transform recipeHolder)
     {
         // Store recipe ingredients length in a variable.
         int ingredientsSize = recipe.ingredients.Length;
@@ -91,7 +91,7 @@ public class CraftingUI : MonoBehaviour
     //    }
     //}
 
-    private void CreateRecipeObjects(InventoryItem inventoryItem, Transform recipeHolder, CollectableRecipe recipe)
+    private void CreateRecipeObjects(InventoryItem inventoryItem, Transform recipeHolder, CraftingRecipe recipe)
     {
         // Create the arrow image UI element and make it a child under the recipeHolder transform.
         var arrow = Instantiate(recipeArrow, recipeHolder);

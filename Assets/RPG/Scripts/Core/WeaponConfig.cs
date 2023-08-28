@@ -97,6 +97,10 @@ namespace RPG.Core
                         weapon2.gameObject.name = weaponName2;
                     }
                 }
+                if (animator.runtimeAnimatorController != null)
+                {
+                    animator.runtimeAnimatorController = animatorOverride;
+                }
             }
             return weapon;
         }

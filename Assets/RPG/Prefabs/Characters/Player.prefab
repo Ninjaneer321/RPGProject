@@ -69397,7 +69397,6 @@ GameObject:
   - component: {fileID: 4242346416120290399}
   - component: {fileID: 5595906252857697892}
   - component: {fileID: 6811263058590247943}
-  - component: {fileID: 7059429620046256375}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -69470,7 +69469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDraggingUI: 0
   isCastingAbility: 0
-  baseAnimator: {fileID: 22100000, guid: 65e4a2a5ed1390546af5db8a94b885bf, type: 2}
   isSheathed: 0
   isWalking: 0
   canLoot: 0
@@ -70067,18 +70065,6 @@ MonoBehaviour:
     level: 0
     experienceGainedTowardsNextLevel: 0
   skillExperiencePopupUI: {fileID: 0}
---- !u!114 &7059429620046256375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7201353854395626935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f620ec09df8b53e4f96213635aa7a384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7614045071942486245
 GameObject:
   m_ObjectHideFlags: 0

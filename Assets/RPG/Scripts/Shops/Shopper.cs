@@ -8,7 +8,6 @@ namespace RPG.Shops
     public class Shopper : MonoBehaviour
     {
         Shop activeItemShop = null;
-        AbilityShop activeAbilityShop = null;
 
         public event Action activeShopChange;
         public void SetActiveShop(Shop shop)
@@ -27,31 +26,12 @@ namespace RPG.Shops
                 activeShopChange();
             }
         }
-        public void SetActiveShop(AbilityShop shop)
-        {
-            if (activeAbilityShop != null)
-            {
-                activeAbilityShop.SetShopper(null);
-            }
-            activeAbilityShop = shop;
-            if (activeAbilityShop != null)
-            {
-                activeAbilityShop.SetShopper(this);
-            }
-            if (activeShopChange != null)
-            {
-                activeShopChange();
-            }
-        }
+
 
         public Shop GetActiveShop()
         {
             return activeItemShop;
         }
 
-        public AbilityShop GetActiveAbilityShop()
-        {
-            return activeAbilityShop;
-        }
     }
 }

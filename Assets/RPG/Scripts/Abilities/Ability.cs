@@ -26,9 +26,6 @@ namespace RPG.Abilities
         [SerializeField] public bool isBeingCasted = false;
         [SerializeField] Transform summonCirclePrefab = null;
         [SerializeField] float abilityRange = 0f;
-
-
-
         private SpellBar spellBar;
         Animator animator;
         PlayerManager playerManager;

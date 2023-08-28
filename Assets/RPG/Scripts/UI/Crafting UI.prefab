@@ -300,6 +300,7 @@ MonoBehaviour:
   itemSlot: {fileID: 273064776866535494, guid: 3344302389b1ad446890b99ce205405d, type: 3}
   recipeArrow: {fileID: 6812384713272240071, guid: f3addf990f662c74eb70ce7aeef27072, type: 3}
   craftButton: {fileID: 7004611447516686756, guid: 89513e224d7d0884a8fc6e1e621c5153, type: 3}
+  craftingRecipeBank: {fileID: 0}
 --- !u!114 &5387461436983686427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,9 +1035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42881d6dcb0f9a4e951addba6a66b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  craftingRecipe: {fileID: 11400000, guid: 30b62f03da563a746a0568fa50dbebb5, type: 2}
+  craftingRecipeBank: {fileID: 11400000, guid: 30b62f03da563a746a0568fa50dbebb5, type: 2}
   craftingItems: {fileID: 5225651863125181563}
-  craftingUI: {fileID: 2420431072526678785}
 --- !u!114 &892182386121681773
 MonoBehaviour:
   m_ObjectHideFlags: 0
