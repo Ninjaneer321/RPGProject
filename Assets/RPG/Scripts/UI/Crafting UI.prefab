@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a392df992b7c03c4182ca4f32e475987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipePrefab: {fileID: 7352489509276796826, guid: 68839dd7de0dab64383fe1a4ec1cd69a, type: 3}
+  recipeRowPrefab: {fileID: 7352489509276796826, guid: 68839dd7de0dab64383fe1a4ec1cd69a, type: 3}
   itemSlot: {fileID: 273064776866535494, guid: 3344302389b1ad446890b99ce205405d, type: 3}
   recipeArrow: {fileID: 6812384713272240071, guid: f3addf990f662c74eb70ce7aeef27072, type: 3}
   craftButton: {fileID: 7004611447516686756, guid: 89513e224d7d0884a8fc6e1e621c5153, type: 3}
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 7167242717201188160}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class CraftingUI : MonoBehaviour
 {
-    [SerializeField] GameObject recipePrefab = null;
+    [SerializeField] GameObject recipeRowPrefab = null;
     [SerializeField] CraftingSlotUI itemSlot = null;
     [SerializeField] GameObject recipeArrow = null;
     [SerializeField] Button craftButton = null;
@@ -45,7 +45,7 @@ public class CraftingUI : MonoBehaviour
         for (int i = 0; i < craftingRecipeBank.GetCraftingRecipes().Length; i++)
         {
             // Create a recipe holder gameobject in under the current transform.
-            var recipeHolder = Instantiate(recipePrefab, transform);
+            var recipeHolder = Instantiate(recipeRowPrefab, transform);
             // Destroy all of the child elements in the recipe holder gameobject.
             DestroyChild(recipeHolder.transform);
 
