@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4417844ce4278440a80c74bc10e69de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: dc0f3860b40f3a64d80365c20ff1eaa3, type: 2}
+  item: {fileID: 11400000, guid: ce5d08fd412a9f042bfeba03c2f9e91e, type: 2}
+  collectableRecipe: {fileID: 0}
   number: 1
 --- !u!114 &6195902400433973511
 MonoBehaviour:

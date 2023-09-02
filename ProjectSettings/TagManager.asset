@@ -18,6 +18,8 @@ TagManager:
   - SFXSource
   - IgnoreSFXVolume
   - UICanvas
+  - DuplicatedAbility
+  - DuplicatedActionItem
   layers:
   - Default
   - TransparentFX

@@ -34,7 +34,8 @@ public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Abili
 
     public void AddItems(Ability item, int number)
     {
-        Debug.Log("AddItems");
+        //Add using a method created on AbilityInventory.cs (like InventorySlotUI.cs)
+        Debug.Log("AddItems in AbilitySlotUI.cs");
     }
 
     public Ability GetItem()
@@ -49,6 +50,6 @@ public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Abili
 
     public void RemoveItems(int number)
     {
-        Debug.Log("RemoveItems");
+        Debug.Log("RemoveItems in AbilitySlotUI.cs");
     }
 }

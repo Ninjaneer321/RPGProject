@@ -274,7 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15118cd9b2c3d764eae87df988166d65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 2916464223493865297}
+  inventoryItemIcon: {fileID: 2916464223493865297}
+  abilityItemIcon: {fileID: 0}
   index: 0
   cooldownOverlay: {fileID: 7470188116582239394}
 --- !u!114 &3824114093794569618
@@ -528,6 +529,10 @@ PrefabInstance:
     - target: {fileID: 1847210799765944866, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4178997106646080975, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4178997106646080975, guid: 1973af7fc3e1d2b428983f58906580be, type: 3}
       propertyPath: m_Enabled

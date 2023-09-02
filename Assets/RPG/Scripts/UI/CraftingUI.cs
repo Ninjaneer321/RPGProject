@@ -42,6 +42,7 @@ public class CraftingUI : MonoBehaviour
     {
         DestroyChild(transform);
 
+        Debug.Log(GetCraftingRecipeBank());
         for (int i = 0; i < craftingRecipeBank.GetCraftingRecipes().Length; i++)
         {
             // Create a recipe holder gameobject in under the current transform.

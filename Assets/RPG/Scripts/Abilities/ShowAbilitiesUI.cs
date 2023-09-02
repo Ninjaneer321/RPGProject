@@ -6,14 +6,16 @@ public class ShowAbilitiesUI : MonoBehaviour
 {
     [SerializeField] AbilityUI abilityUI = null;
 
+    public AbilityInventory abilityInventory;
     private void Awake()
     {
-
+        var player = GameObject.FindWithTag("Player");
+        abilityInventory = player.GetComponent<AbilityInventory>();
     }
 
     private void Start()
     {
-        abilityUI.SetupAbilities(abilityUI.GetAbilitiesBank());
+        abilityInventory.SetupAbilities(abilityInventory.GetAbilitiesBank());
     }
 
 }

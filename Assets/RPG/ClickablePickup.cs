@@ -27,14 +27,6 @@ namespace RPG.Control
 
         public CursorType GetCursorType()
         {
-            //if (pickup.CanBePickedUp())
-            //{
-            //    return CursorType.Pickup;
-            //}
-            //else
-            //{
-            //    return CursorType.FullPickup;
-            //}
 
             PlayerManager playerManager = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
             if (Vector3.Distance(this.transform.position, playerManager.transform.position) <= 2.5f)

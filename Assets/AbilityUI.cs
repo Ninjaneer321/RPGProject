@@ -5,17 +5,19 @@ using UnityEngine;
 
 public class AbilityUI : MonoBehaviour
 {
-    [SerializeField] AbilitiesBank abilitiesBank;
+
     [SerializeField] AbilitySlotUI abilitySlot = null;
     [SerializeField] GameObject abilityRowPrefab = null;
 
-    public AbilitiesBank GetAbilitiesBank()
+    public AbilityInventory abilityInventory;
+
+    private void Awake()
     {
-        return abilitiesBank;
+        abilityInventory = AbilityInventory.GetPlayerAbilityInventory();
+        abilityInventory.abilityInventoryUpdated += Redraw;
     }
-    public void SetupAbilities(AbilitiesBank bank)
+    private void Start()
     {
-        abilitiesBank = bank;
         Redraw();
     }
 
@@ -23,11 +25,11 @@ public class AbilityUI : MonoBehaviour
     {
         DestroyChild(transform);
 
-        for (int i = 0; i < abilitiesBank.GetAbilities().Length; i++)
+        for (int i = 0; i < abilityInventory.GetAbilitiesBank().GetAbilities().Length; i++)
         {
             var abilityHolder = Instantiate(abilityRowPrefab, transform);
             DestroyChild(abilityHolder.transform);
-            var ability = abilitiesBank.GetAbilities()[i];
+            var ability = abilityInventory.GetAbilitiesBank().GetAbilities()[i];
             //Create and setup ability objects. 
             CreateAbilityObjects(ability, abilityHolder.transform);
         }
