@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Inventories;
 using GameDevTV.UI.Inventories;
+using RPG.Abilities;
 using RPG.Shops;
 using TMPro;
 using UnityEngine;
@@ -114,10 +115,11 @@ namespace RPG.UI.Shops
         {
             return rowPrefab.GetItem();
         }
-
-        public AbilityItem GetAbility()
+        public Ability GetAbility()
         {
-            throw new NotImplementedException();
+            Debug.Log("Not implemented");
+            throw new System.NotImplementedException();
         }
+
     }
 }

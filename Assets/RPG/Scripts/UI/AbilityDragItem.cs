@@ -11,7 +11,7 @@ using UnityEngine.EventSystems;
 /// To be placed on icons representing the item in a slot. Allows the item
 /// to be dragged into other slots.
 /// </summary>
-public class AbilityDragItem : DragItem<Ability>, IBeginDragHandler
+public class AbilityDragItem : DragItem<Ability>
 {
 
 }

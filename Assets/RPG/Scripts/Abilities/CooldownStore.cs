@@ -11,13 +11,13 @@ namespace RPG.Abilities
         Dictionary<InventoryItem, float> cooldownTimersInventoryItems = new Dictionary<InventoryItem, float>();
         Dictionary<InventoryItem, float> initialCooldownTimesInventoryItems = new Dictionary<InventoryItem, float>();
 
-        Dictionary<AbilityItem, float> cooldownTimersAbilityItems = new Dictionary<AbilityItem, float>();
-        Dictionary<AbilityItem, float> initialCooldownTimesAbilityItems = new Dictionary<AbilityItem, float>();
+        Dictionary<Ability, float> cooldownTimersAbilityItems = new Dictionary<Ability, float>();
+        Dictionary<Ability, float> initialCooldownTimesAbilityItems = new Dictionary<Ability, float>();
 
         private void Update()
         {
             var inventoryKeys = new List<InventoryItem>(cooldownTimersInventoryItems.Keys); //need copy of dictionary into list before we iterate over
-            var abilityKeys = new List<AbilityItem>(cooldownTimersAbilityItems.Keys);
+            var abilityKeys = new List<Ability>(cooldownTimersAbilityItems.Keys);
             foreach (InventoryItem item in inventoryKeys)
             {
                 cooldownTimersInventoryItems[item] -= Time.deltaTime;
@@ -27,7 +27,7 @@ namespace RPG.Abilities
                     initialCooldownTimesInventoryItems.Remove(item);
                 }
             }
-            foreach (AbilityItem ability in abilityKeys)
+            foreach (Ability ability in abilityKeys)
             {
                 cooldownTimersAbilityItems[ability] -= Time.deltaTime;
                 if (cooldownTimersAbilityItems[ability] < 0)
@@ -69,13 +69,13 @@ namespace RPG.Abilities
         }
 
 
-        public void StartCooldownAbilityItem(AbilityItem ability, float cooldownTime)
+        public void StartCooldownAbilityItem(Ability ability, float cooldownTime)
         {
             cooldownTimersAbilityItems[ability] = cooldownTime;
             initialCooldownTimesAbilityItems[ability] = cooldownTime;
         }
 
-        public float GetTimeRemainingAbilityItem(AbilityItem ability)
+        public float GetTimeRemainingAbilityItem(Ability ability)
         {
             if (!cooldownTimersAbilityItems.ContainsKey(ability))
             {
@@ -85,7 +85,7 @@ namespace RPG.Abilities
             return cooldownTimersAbilityItems[ability];
         }
 
-        public float GetFractionRemainingAbilityItem(AbilityItem ability)
+        public float GetFractionRemainingAbilityItem(Ability ability)
         {
             if (ability == null)
             {

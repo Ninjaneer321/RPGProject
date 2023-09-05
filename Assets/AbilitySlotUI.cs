@@ -28,14 +28,12 @@ public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Abili
 
     public int MaxAcceptable(Ability item)
     {
-        //We do not want more than two copies of an Ability on a slot.
-        return 1;
+        return int.MaxValue;
     }
 
     public void AddItems(Ability item, int number)
     {
         //Add using a method created on AbilityInventory.cs (like InventorySlotUI.cs)
-        Debug.Log("AddItems in AbilitySlotUI.cs");
     }
 
     public Ability GetItem()
@@ -45,11 +43,11 @@ public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Abili
 
     public int GetNumber()
     {
-        throw new System.NotImplementedException();
+        return 1;
     }
 
     public void RemoveItems(int number)
     {
-        Debug.Log("RemoveItems in AbilitySlotUI.cs");
+
     }
 }

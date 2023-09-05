@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GameDevTV.Inventories;
 using GameDevTV.UI.Inventories;
+using RPG.Abilities;
 using UnityEngine;
 using UnityEngine.UI;
 public class CraftingSlotUI: MonoBehaviour, IItemHolder
@@ -24,9 +25,11 @@ public class CraftingSlotUI: MonoBehaviour, IItemHolder
         // Return the set value in the item variable for the tooltip system
         return item;
     }
-
-    public AbilityItem GetAbility()
+    
+    public Ability GetAbility()
     {
+        Debug.Log("Not implemented");
         throw new System.NotImplementedException();
     }
+
 }

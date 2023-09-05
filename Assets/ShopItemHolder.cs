@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using GameDevTV.Inventories;
 using GameDevTV.UI.Inventories;
+using RPG.Abilities;
 using RPG.UI.Shops;
 using UnityEngine;
 
@@ -21,6 +22,11 @@ namespace RPG.Shops
         {
             return gameObject.GetComponentInParent<RowUI>().GetShopItem().GetInventoryItem();
 
+        }
+        public Ability GetAbility()
+        {
+            Debug.Log("Not implemented");
+            throw new System.NotImplementedException();
         }
 
     }

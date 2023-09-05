@@ -13,29 +13,9 @@ MonoBehaviour:
   m_Name: Crate Drop Library
   m_EditorClassIdentifier: 
   potentialDrops:
-  - item: {fileID: 11400000, guid: 064dd181ac172b94bbb72fc22486c6a1, type: 2}
+  - item: {fileID: 11400000, guid: 709b21660216998449b3c90cf9a6cc89, type: 2}
     relativeChance:
     - 95
-    minNumberOfItems: 01000000
-    maxNumberOfItems: 01000000
-  - item: {fileID: 11400000, guid: db933410f8c00ce4bb2d99dea01d9db1, type: 2}
-    relativeChance:
-    - 95
-    minNumberOfItems: 01000000
-    maxNumberOfItems: 01000000
-  - item: {fileID: 11400000, guid: ae3b6c6390e08ea4f8a1e0787eabd7f2, type: 2}
-    relativeChance:
-    - 95
-    minNumberOfItems: 01000000
-    maxNumberOfItems: 01000000
-  - item: {fileID: 11400000, guid: 08abab3c6e4f81f4da04713331b6c768, type: 2}
-    relativeChance:
-    - 95
-    minNumberOfItems: 01000000
-    maxNumberOfItems: 01000000
-  - item: {fileID: 11400000, guid: 30d99e901c00b654ca3d9eb86167e375, type: 2}
-    relativeChance:
-    - 100
     minNumberOfItems: 01000000
     maxNumberOfItems: 01000000
   dropChancePercentage:

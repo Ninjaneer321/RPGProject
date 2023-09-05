@@ -59,10 +59,5 @@ namespace RPG.Inventories
                 return 0;
         }
 
-        public int AddAbilityItems(AbilityItem ability, int number)
-        {
-            Debug.Log("Purchased Ability Items");
-            throw new NotImplementedException();
-        }
     }
 }
