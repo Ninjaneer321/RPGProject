@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f4d0a12acf5ca448ccede0e4e3f8a3, type: 3}
+  m_Name: Crafting Recipe Bank
+  m_EditorClassIdentifier: 
+  collectableRecipes:
+  - {fileID: 11400000, guid: 5e57d183fd15d1344941a958f43406ce, type: 2}

@@ -172,7 +172,8 @@ namespace RPG.Control
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1 + i))
                 {
-                    actionStore.Use(i, gameObject);
+                    actionStore.UseItem(i, gameObject);
+                    actionStore.UseAbility(i, gameObject);
                 }
             }
         }

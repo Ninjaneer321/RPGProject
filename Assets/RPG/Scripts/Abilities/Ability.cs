@@ -58,6 +58,11 @@ namespace RPG.Abilities
             return Vector3.Distance(playerLocation, targetLocation);
         }
 
+        public bool UseAbility(GameObject user)
+        {
+            //Revise and rewrite the commented Use method and place it here.
+            return false;
+        }
         //public override void Use(GameObject user)
         //{
         //    BaseStats stats = user.GetComponent<BaseStats>();
@@ -111,6 +116,7 @@ namespace RPG.Abilities
         //    {
         //        targetingStrategy.StartTargeting(data, () => TargetAcquired(data));
         //    }
+        //     return true;
 
         //}
         //public IEnumerator SpellCastCoroutine(GameObject user)
