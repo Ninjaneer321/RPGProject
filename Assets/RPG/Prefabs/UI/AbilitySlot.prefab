@@ -144,8 +144,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ability Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f266fc3c59780fb4ebb01d43f1575315, type: 2}
+  m_sharedMaterial: {fileID: 8989764608254892107, guid: f266fc3c59780fb4ebb01d43f1575315, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -329,6 +329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8ba282da6a29643a87dd963e322ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 0, z: 0}
+  originalParent: {fileID: 0}
 --- !u!1 &7048328930311525271
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +345,7 @@ GameObject:
   - component: {fileID: 4630061757721646095}
   - component: {fileID: 6946333206132366388}
   - component: {fileID: 5025610992914716878}
+  - component: {fileID: 337081756360214701}
   m_Layer: 5
   m_Name: AbilitySlot
   m_TagString: Untagged
@@ -488,3 +491,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 2661345947598702667}
   ability: {fileID: 0}
+--- !u!114 &337081756360214701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7048328930311525271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc4daf13a8e5d04a9dfefec08811e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipPrefab: {fileID: 6796662661069912602, guid: 9ae64e5bbc82aa44fa6f44bf445d382a, type: 3}

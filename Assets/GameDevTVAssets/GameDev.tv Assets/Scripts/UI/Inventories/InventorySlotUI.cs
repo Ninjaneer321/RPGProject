@@ -51,8 +51,7 @@ namespace GameDevTV.UI.Inventories
         }
         public Ability GetAbility()
         {
-            Debug.Log("Not implemented");
-            throw new System.NotImplementedException();
+            return null;
         }
 
         public int GetNumber()

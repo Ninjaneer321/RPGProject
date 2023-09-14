@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using GameDevTV.Inventories;
+using RPG.Abilities;
 
 namespace GameDevTV.UI.Inventories
 {
@@ -19,6 +20,12 @@ namespace GameDevTV.UI.Inventories
         {
             titleText.text = item.GetDisplayName();
             bodyText.text = item.GetDescription();
+        }
+        
+        public void Setup(Ability ability)
+        {
+            titleText.text = ability.GetDisplayName();
+            bodyText.text = ability.GetDescription();
         }
     }
 }

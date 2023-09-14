@@ -1,0 +1,30 @@
+http://www.InfinityPBR.com
+Join the Discord: https://discord.com/invite/cmZY2tH
+
+Thank you for getting the Dungeon package from Infinity PBR! This package is meant to be an evolving pack, expanding and updating over time.
+
+As such, all meshes, materials, and prefabs are subject to change!
+
+If you want to ensure that your prefabs do NOT change when the package is updated, create your own Prefab Variants or Original Prefabs of the prefabs in this project. (If you would like, you could simply copy the entire "_Prefabs" folder, which would duplicate all prefabs)
+
+This way, when you download an update, any changes we make to the prefabs won't affect your project.
+
+You should expect, over time:
+
+* Additional models to be added
+* Additional textures to be added
+* Additional prefabs to be created and included
+* Updates to meshes over time
+* Updates to materials over time
+* Updates to prefabs over time
+* Additional sound effects and particle effects
+* Sound and particle effects added to prefabs, or modified over time
+* and more
+
+Thank you!
+
+
+DEMO SCENE QUICK START
+Important: You will need to import the Post Processing from the Package Manager if it is not already in your project.
+
+Also, please change to Linear color space. Select Edit/Project Settings, click "Player" and find "Gamma" or "Linear", and make sure "Linear" is selected.

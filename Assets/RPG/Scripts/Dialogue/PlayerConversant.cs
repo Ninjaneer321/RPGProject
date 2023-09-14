@@ -98,14 +98,14 @@ namespace RPG.Dialogue
         }
         public string GetCurrentConversantName()
         {
-            if (isChoosing)
-            {
-                return playerName;
-            }
-            else
-            {
+            //if (isChoosing)
+            //{
+            //    return playerName;
+            //}
+            //else
+            //{
                 return currentConversant.GetName();
-            }
+            //}
         }
 
 
@@ -128,7 +128,9 @@ namespace RPG.Dialogue
             if (numPlayerResponses > 0)
             {
                 isChoosing = true;
-                TriggerExitAction();
+                //TriggerExitAction(); //this was just commented out. if this is NOT commented out, TriggerExitAction happens when the 
+                //NPC dialogue ends and the player responses initialize. we need the TriggerExitAction to happen after the player 
+                //selects a reply.
                 if (onConversationUpdated != null)
                 {
                     onConversationUpdated();
@@ -147,7 +149,7 @@ namespace RPG.Dialogue
                 int randomIndex = UnityEngine.Random.Range(0, children.Count());
                 TriggerExitAction();
                 currentNode = children[randomIndex];
-                TriggerEnterAction();
+                //TriggerEnterAction();
                 if (onConversationUpdated != null)
                 {
                     onConversationUpdated();

@@ -23,11 +23,17 @@ MonoBehaviour:
   category: 2
   allowedEquipLocation: 5
   equipCondition:
-    and: []
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 4
+        - 
+        negate: 0
   additiveModifiers:
-  - stat: 10
+  - stat: 9
     value: 3
-  - stat: 12
+  - stat: 11
     value: 1
   percentageModifiers: []
   animatorOverride: {fileID: 22100000, guid: f23eb8f93f4c3e141af551ea35a0e314, type: 2}
@@ -39,6 +45,6 @@ MonoBehaviour:
   weaponRange: 2
   weaponSpeed: 3.5
   projectile: {fileID: 0}
-  weaponSkill: 7
+  weaponSkill: 6
   isTwoHanded: 1
   mainHand: 2

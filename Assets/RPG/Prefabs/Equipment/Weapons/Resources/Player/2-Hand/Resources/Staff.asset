@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: ddce2fca-a94f-4696-9c02-b473bd6f8f32
   displayName: Acolyte's Staff
   description: "Two-Hand Staff         \n13-16 Damage / Speed 3.5\n(4.14 damage per
-    second)\n+1 Intelligence\n+4 Mana Regen\nRequires Level 1"
+    second)\n+1 Intelligence\n+2 Spirit\nRequires Level 1"
   icon: {fileID: 21300000, guid: 83851fda34093e6489a4a26c4a705105, type: 3}
   pickup: {fileID: 6494234044896430859, guid: ab73185f2dadf4445ae07e78eb669c1f, type: 3}
   stackable: 0
@@ -25,10 +25,10 @@ MonoBehaviour:
   equipCondition:
     and: []
   additiveModifiers:
+  - stat: 12
+    value: 1
   - stat: 13
     value: 2
-  - stat: 5
-    value: 4
   percentageModifiers: []
   animatorOverride: {fileID: 22100000, guid: 5417c0e4fbc417d4daa7b2f56d4f6fa0, type: 2}
   weaponPrefab: {fileID: 6290066852969694541, guid: 3f85998113d4c06448b939840b562c96, type: 3}
@@ -39,6 +39,6 @@ MonoBehaviour:
   weaponRange: 2
   weaponSpeed: 3.5
   projectile: {fileID: 0}
-  weaponSkill: 8
+  weaponSkill: 7
   isTwoHanded: 1
   mainHand: 2

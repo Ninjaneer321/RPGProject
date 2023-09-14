@@ -38,7 +38,6 @@ namespace RPG.Core
         private void Awake()
         {
         }
-
         public float GetRange()
         {
             return weaponRange;

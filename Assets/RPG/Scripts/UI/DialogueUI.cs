@@ -14,7 +14,7 @@ namespace RPG.UI
         [SerializeField] AudioSource audioSource;
 
         [SerializeField] TextMeshProUGUI AIText;
-        [SerializeField] Button nextButton;
+        //[SerializeField] Button nextButton;
         [SerializeField] Button quitButton;
         [SerializeField] Transform choiceRoot;
         [SerializeField] GameObject choicePrefab;
@@ -33,7 +33,7 @@ namespace RPG.UI
             audioSource.mute = false;
             for (int i = 0; i < playerConversant.GetText().Length + 1; i++)
             {
-                nextButton.gameObject.SetActive(false);
+                //nextButton.gameObject.SetActive(false);
                 itemInfoText.text = playerConversant.GetText().Substring(0, i);
                 if (itemInfoText.text != "") //Trying to remove the sound from playing if the letter is essentially blank (a space)
                 {
@@ -41,7 +41,10 @@ namespace RPG.UI
                 }
                 yield return new WaitForSeconds(textSpeed);
             }
-            nextButton.gameObject.SetActive(true);
+            //Right now this goes immediately to the Next() method which replaces the NPC textbox with the Player textbox. Remove the player
+            //textbox and replicate the player responses at the end of the NPC textbox within the NPC textbox.
+            Next();
+            //nextButton.gameObject.SetActive(true);
 
 
             //Enable the nextButton or quitButton only when finished.
@@ -61,7 +64,7 @@ namespace RPG.UI
 
            audioSource = GetComponent<AudioSource>();
            playerConversant.onConversationUpdated += UpdateUI;
-           nextButton.onClick.AddListener(Next);
+           //nextButton.onClick.AddListener(Next);
            quitButton.onClick.AddListener(Quit);
            UpdateUI();
         }
@@ -88,7 +91,7 @@ namespace RPG.UI
             }
 
             currentSpeaker.text = playerConversant.GetCurrentConversantName();
-            AIResponse.SetActive(!playerConversant.IsChoosing());
+            //AIResponse.SetActive(!playerConversant.IsChoosing());
             choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
 
             if(playerConversant.IsChoosing())

@@ -163,8 +163,8 @@ namespace GameDevTV.Inventories
             {
                 if (dockedItems[index].item == null)
                 {
-                    Debug.Log("Item is null. Using Ability");
                     dockedItems[index].ability.UseAbility(user);
+                    Debug.Log("Item is null. Using Ability");
                 }
                 return true;
             }

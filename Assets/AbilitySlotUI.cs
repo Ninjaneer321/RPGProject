@@ -6,7 +6,7 @@ using UnityEngine;
 using RPG.Abilities;
 using GameDevTV.Core.UI.Dragging;
 
-public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Ability>
+public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Ability>, IItemHolder
 {
     [SerializeField] AbilityItemIcon icon = null;
     public Ability ability;
@@ -49,5 +49,10 @@ public class AbilitySlotUI : MonoBehaviour, IAbilityHolder, IDragContainer<Abili
     public void RemoveItems(int number)
     {
 
+    }
+
+    InventoryItem IItemHolder.GetItem()
+    {
+        return null;
     }
 }

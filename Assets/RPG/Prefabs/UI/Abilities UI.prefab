@@ -70,15 +70,15 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f266fc3c59780fb4ebb01d43f1575315, type: 2}
+  m_sharedMaterial: {fileID: 8989764608254892107, guid: f266fc3c59780fb4ebb01d43f1575315, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -338,8 +338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -46.398804, y: -52.253387}
-  m_SizeDelta: {x: 105.9975, y: 93.6079}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 145, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7657552896373379723
 CanvasRenderer:
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 71c0e8f2ab704bf4a983c4d6a49906c6, type: 3}
+  m_Sprite: {fileID: 21300016, guid: 47a0b7904a813ae4390adce5e3e188f3, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -706,9 +706,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef423b0cc454e8418f3adcd931ca44d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilitiesBank: {fileID: 11400000, guid: d2ba72bb1eefc8b45a10abe9a93305be, type: 2}
   abilitySlot: {fileID: 5025610992914716878, guid: 2bf247be15fb094449e94d09782ad6ab, type: 3}
   abilityRowPrefab: {fileID: 8956659491951382230, guid: cba647ff0859bbb44b9e356a24975cd1, type: 3}
+  abilityInventory: {fileID: 0}
 --- !u!114 &4242197862773407752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityUI: {fileID: 8203915826498850502}
+  abilityInventory: {fileID: 0}
 --- !u!114 &6794735951705850995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,7 +900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d25911b539c43cf41887fb876f6f4d71, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 87b7fdc2ff27fa648888ec7b07ed1f3a, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1054,7 +1055,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ff128f70cb401434da05bb746522f40d, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 87b7fdc2ff27fa648888ec7b07ed1f3a, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

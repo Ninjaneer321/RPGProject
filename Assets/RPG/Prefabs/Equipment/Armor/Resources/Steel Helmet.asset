@@ -26,7 +26,13 @@ MonoBehaviour:
   category: 1
   allowedEquipLocation: 0
   equipCondition:
-    and: []
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - 2
+        - 
+        negate: 0
   additiveModifiers:
   - stat: 9
     value: 2

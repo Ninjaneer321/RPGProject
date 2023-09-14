@@ -252,7 +252,10 @@ namespace RPG.Combat
         //void HitServerRpc()
         //Maybe dont use the animation event as the Hit, but call Hit at a point where the animation plays? 
 
-
+        void Swing()
+        {
+            currentWeapon.value.OnSwing();
+        }
         void Hit()
         {
             if (target == null)  return;

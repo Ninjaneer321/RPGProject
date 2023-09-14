@@ -91,6 +91,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Back
       objectReference: {fileID: 0}
+    - target: {fileID: 978970596814607920, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978970596814607920, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978970596814607920, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3607084962290094800, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -215,6 +227,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8054642840471873803, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0973736b6a2b9184099cfc83ba0e4123, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe11cbd4b906b649a60dee68ca6dc63, type: 3}
 --- !u!1 &2889999571120989618 stripped
