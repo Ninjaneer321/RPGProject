@@ -19,7 +19,6 @@ public class SkillRowUI : MonoBehaviour
     [SerializeField] float experienceAmountNeededToLevelUp;
     [SerializeField] float experienceNeededBetweenLevels;
     [SerializeField] float excessExperience;
-    //[SerializeField] int skillLevel;
 
     private void Awake()
     {
@@ -34,21 +33,6 @@ public class SkillRowUI : MonoBehaviour
 
     }
 
-
-
-    //private void OnEnable()
-    //{
-    //    baseSkills.onSkillLevelUp += SetExperienceAmountNeededToLevelUp;
-    //}
-    //private void OnDisable()
-    //{
-    //    baseSkills.onSkillLevelUp -= SetExperienceAmountNeededToLevelUp;
-
-    //}
-
-
-
-
     //set up the slider value to be a normalized value of my skill experience / the skill experience to next level.
 
     private void Update()
@@ -58,9 +42,6 @@ public class SkillRowUI : MonoBehaviour
         normalizedExperienceValue = SkillExperienceGainedTowardsLevel() / experienceNeededBetweenLevels;
         slider.value = normalizedExperienceValue;
         experienceLabel.text = SkillExperienceGainedTowardsLevel().ToString() + " / " + experienceNeededBetweenLevels.ToString();
-
-        //excessExperience = SkillExperience() - SkillExperienceToNextLevel()[SkillLevel(skill)];
-        //Debug.Log(SkillExperience() - SkillExperienceToNextLevel()[SkillLevel(skill)]);
     }
 
     public float GetExperienceNeededBetweenLevels()

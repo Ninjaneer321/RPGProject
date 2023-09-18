@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Animations;
 using GameDevTV.Saving;
-using Unity.Netcode.Components;
 
 public class CinematicTrigger : MonoBehaviour, ISaveable
 {

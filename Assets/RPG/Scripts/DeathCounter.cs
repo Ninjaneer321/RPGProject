@@ -1,6 +1,5 @@
 using System;
 using RPG.Stats;
-using Unity.Netcode;
 using UnityEngine;
 
 namespace RPG.Quests

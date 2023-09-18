@@ -12,8 +12,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using GameDevTV.Inventories;
-using Unity.Netcode;
-using Unity.Netcode.Components;
 
 namespace RPG.Combat
 {

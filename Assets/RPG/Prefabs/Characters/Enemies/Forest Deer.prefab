@@ -2728,6 +2728,7 @@ MonoBehaviour:
   progression: {fileID: 11400000, guid: 68c6722a6a22ffa4f9d4f071740826ad, type: 2}
   levelUpParticleEffect: {fileID: 0}
   shouldUseModifiers: 1
+  experienceDisplay: {fileID: 0}
 --- !u!114 &3123732434060893674
 MonoBehaviour:
   m_ObjectHideFlags: 0

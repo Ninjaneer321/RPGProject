@@ -15,6 +15,7 @@ namespace RPG.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpParticleEffect = null;
         [SerializeField] bool shouldUseModifiers = false;
+        [SerializeField] ExperienceDisplay experienceDisplay = null;
 
         public event Action onLevelUp;
         [SerializeField] LazyValue<int> currentLevel;
@@ -53,6 +54,15 @@ namespace RPG.Stats
             int newLevel = CalculateLevel();
             if (newLevel > currentLevel.value)
             {
+                //Add the excess experience gained here?
+                float currentXP = experience.GetExperience();
+                float XPToLevelUpPreviousLevel = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, newLevel - 1);
+
+                experienceDisplay.excessExperience = 0;
+                experienceDisplay.excessExperience = currentXP - XPToLevelUpPreviousLevel;
+
+                experience.ResetExperienceGainedTowardsNextLevel(0);
+                experience.ExperienceGainedTowardsNextLevel(experienceDisplay.excessExperience);
                 currentLevel.value = newLevel;
                 print("Levelled Up!");
                 LevelUpEffect();
@@ -77,6 +87,11 @@ namespace RPG.Stats
         public int GetLevel()
         {
             return currentLevel.value;
+        }
+
+        public CharacterClass GetCharacterClass()
+        {
+            return characterClass;
         }
 
         private int GetAdditiveModifier(Stat stat)
@@ -114,17 +129,19 @@ namespace RPG.Stats
             Experience experience = GetComponent<Experience>();
             if (experience == null) return startingLevel;
 
-            float currentXP = experience.GetPoints();
+            float currentXP = experience.GetExperience();
             int penultimateLevel = progression.GetLevels(Stat.ExperienceToLevelUp, characterClass);
             for (int level = 1; level <= penultimateLevel; level++)
             {
                 float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level);
 
                 if (XPToLevelUp > currentXP)
-                {
+                {                    
+
                     return level;
                 }
             }
+
 
             return penultimateLevel + 1;
         }

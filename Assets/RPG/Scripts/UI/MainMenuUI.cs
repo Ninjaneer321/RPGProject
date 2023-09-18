@@ -5,7 +5,6 @@ using RPG.Dialogue;
 using RPG.SceneManagement;
 using TMPro;
 using UnityEngine;
-using Unity.Netcode;
 using SceneManagement;
 
 namespace RPG.UI
@@ -28,11 +27,6 @@ namespace RPG.UI
             {
                 portal.gameObject.GetComponent<BoxCollider>().enabled = true;
             }
-        }
-
-        public void StartNetworkAsHost()
-        {
-            NetworkManager.Singleton.StartHost();
         }
 
         private SavingWrapper GetSavingWrapper()

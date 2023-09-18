@@ -5,7 +5,6 @@ using GameDevTV.Saving;
 using UnityEngine;
 using RPG.Inventories;
 using System.Linq;
-using Unity.Netcode;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(Equipment))]

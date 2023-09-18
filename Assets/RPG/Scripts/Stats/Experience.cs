@@ -2,47 +2,57 @@ using GameDevTV.Saving;
 using UnityEngine;
 using System;
 using Stats;
+using RPG.UI;
 
 namespace RPG.Stats
 {
 
     public class Experience : MonoBehaviour, ISaveable
     {
-        [SerializeField] float experiencePoints = 0;
+        [SerializeField] float totalExperiencePoints = 0;
+        [SerializeField] float experiencePointsGainedTowardsNextLevel = 0;
+        [SerializeField] PlayerLevelExperiencePopupUI playerLevelExperiencePopupUI;
 
         public event Action onExperienceGained;
 
-        private void Update()
+        //Public Setter for ExperienceGainedTowardsNextLevel
+        public void ExperienceGainedTowardsNextLevel(float newValue)
         {
-            //if (Input.GetKey(KeyCode.E))
-            //{
-            //    GainExperience(Time.deltaTime * 100);
-            //}
+            experiencePointsGainedTowardsNextLevel += newValue;
+        }
+        public void ResetExperienceGainedTowardsNextLevel(float newValue)
+        {
+            experiencePointsGainedTowardsNextLevel = newValue;
+        }
+
+        //Public Getter for ExperiencePointsGainedTowardsNextLevel
+        public float GetExperiencePointsGainedTowardsNextLevel
+        {
+            get { return experiencePointsGainedTowardsNextLevel; }
         }
         public void GainExperience(float experience)
         {
-            experiencePoints += experience;
+            totalExperiencePoints += experience;
+            experiencePointsGainedTowardsNextLevel += experience;
+            playerLevelExperiencePopupUI.SetExperiencePopup(experience.ToString());
+            playerLevelExperiencePopupUI.gameObject.SetActive(true);
             onExperienceGained();
         }
 
         public float GetExperience()
         {
-            return experiencePoints;
-        }
-        public float GetPoints()
-        {
-            return experiencePoints;
+            return totalExperiencePoints;
         }
 
         public object CaptureState()
         {
-            return experiencePoints;
+            return totalExperiencePoints;
         }
 
 
         public void RestoreState(object state)
         {
-            experiencePoints = (float)state;
+            totalExperiencePoints = (float)state;
         }
     }
 }

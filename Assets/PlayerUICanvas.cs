@@ -5,7 +5,6 @@ using RPG.Combat;
 using RPG.Control;
 using RPG.Stats;
 using TMPro;
-using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 

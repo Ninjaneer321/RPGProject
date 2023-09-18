@@ -13,7 +13,6 @@ using RPG.Dialogue;
 using UnityEngine.AI;
 using GameDevTV.Inventories;
 using RPG.Abilities;
-using Unity.Netcode;
 using UnityEngine.Events;
 
 namespace RPG.Control
